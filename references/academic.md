@@ -25,6 +25,14 @@
 16. "AI in PLM" (2021). Springer. https://link.springer.com/article/10.1007/s00170-021-06882-1
 17. "AI-Driven Process Automation in PLM" (2025). ResearchGate. https://www.researchgate.net/publication/393318511
 
+## MIT Research
+26. Brynjolfsson, Li, Raymond (2025). "Generative AI at Work." Quarterly Journal of Economics 140(2). https://academic.oup.com/qje/article/140/2/889/7990658
+27. Marion, Srour, Piller (2024). "When Generative AI Meets Product Development." MIT SMR. https://sloanreview.mit.edu/article/when-generative-ai-meets-product-development/
+28. MIT SMR & BCG (2025). "The Emerging Agentic Enterprise." https://sloanreview.mit.edu/projects/the-emerging-agentic-enterprise-how-leaders-must-navigate-a-new-age-of-ai/
+29. MIT CSAIL (2025). "Challenges and Paths Towards AI for Software Engineering." ICML 2025. https://news.mit.edu/2025/can-ai-really-code-study-maps-roadblocks-to-autonomous-software-engineering-0716
+30. MIT IDE (2025). "The 2025 AI Agent Index." https://aiagentindex.mit.edu/
+31. MIT (2025). "Designing Human-AI Collaboration: A Sufficient-Statistic Approach." https://economics.mit.edu/sites/default/files/2025-06/AI_Design__Sufficient_Statistics.pdf
+
 ## Cross-Cutting
 18. "Enhancing Human-AI Collaboration in NPD" (2025). ScienceDirect. https://www.sciencedirect.com/science/article/abs/pii/S0360835225008435
 19. "Complementarity in Human-AI Collaboration" (2025). EJIS. https://www.tandfonline.com/doi/full/10.1080/0960085X.2025.2475962
