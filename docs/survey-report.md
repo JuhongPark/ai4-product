@@ -338,7 +338,21 @@
 
 ---
 
-## 9. Key Venues & Resources
+## 9. MIT Research Spotlight
+
+MIT is a leading hub for AI-for-Product research across multiple labs and departments. Key highlights:
+
+- **MIT IDE "GenAI Divide" (2025)**: 95% of GenAI pilots fail to deliver business impact — root cause is organizational design, not technology
+- **"Generative AI at Work" (Brynjolfsson, Li, Raymond, QJE 2025)**: 14% productivity gain across 5,172 agents; largest effect on novice workers
+- **MIT CSAIL "AI for Software Engineering" (ICML 2025)**: Maps roadblocks beyond code generation — refactoring, large-scale migration, system design
+- **MIT MGAIC (2025)**: 55 seed grants across 250 faculty — projects span manufacturing-aware GenAI, agentic data curation, supply chain risk, and more
+- **MIT Media Lab AHA Initiative**: Multi-disciplinary research on human-AI interaction for decision-making, learning, and wellbeing
+
+> **Full deep-dive**: See [research/mit-research/](../research/mit-research/) for comprehensive coverage of MIT labs, researchers, and publications.
+
+---
+
+## 10. Key Venues & Resources
 
 ### Academic Conferences
 - **CHI** (ACM Conference on Human Factors in Computing Systems) — HCI, UX, human-AI interaction
@@ -372,7 +386,7 @@
 
 ---
 
-## 10. Reference List (All Sources)
+## 11. Reference List (All Sources)
 
 ### Academic Papers
 1. Liu et al. (2025). "AI in Automated and Remote UX Evaluation: A Systematic Review." Wiley. https://onlinelibrary.wiley.com/doi/10.1155/ahci/7442179

@@ -16,13 +16,26 @@
 - International Journal of Advanced Manufacturing Technology (Springer)
 
 ## Practitioner Research
-- MIT Sloan Management Review
+- MIT Sloan Management Review (+ BCG Responsible AI Series)
+- MIT Initiative on the Digital Economy (IDE)
 - Harvard Business Review
 - McKinsey (QuantumBlack / State of AI)
 - Deloitte Insights
 - BCG Publications
 - Nielsen Norman Group (NN/g)
 - Stanford HAI (AI Index Report)
+
+## MIT Research Institutions
+- MIT CSAIL — Computer Science and AI Lab (AI for SE, HCI, Program Synthesis)
+- MIT Media Lab — Human-AI Interaction, Affective Computing, Tangible Media
+- MIT Center for Collective Intelligence (CCI) — Superminds, Group Decision Making
+- MIT Generative AI Impact Consortium (MGAIC) — 55 seed grants across MIT
+- MIT CISR — Enterprise AI Maturity, Digital Transformation
+- MIT LIDS — Decision Making under Uncertainty
+- MIT DeCoDE Lab — AI for Engineering Design
+- MIT Design Intelligence Lab — LLM Interfaces, Generative Design
+- MIT Senseable City Lab — Data-Driven Product Innovation
+- MIT Auto-ID Lab — IoT, Digital Twins, Product Lifecycle Tracking
 
 ## Industry Reports
 - Gartner (AI Predictions, Magic Quadrant)
