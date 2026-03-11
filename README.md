@@ -11,6 +11,7 @@
 | 4 | [Management & Decision Making](research/04-management/) | AI-powered PM tools, agentic AI, automated prioritization |
 | 5 | [Growth & Lifecycle](research/05-growth-lifecycle/) | PLM, digital twins, personalization, A/B test automation |
 | 6 | [Cross-Cutting Themes](research/cross-cutting/) | Human-AI collaboration, responsible AI, frameworks & taxonomies |
+| 7 | [Industry Trends](research/industry-trends/) | Tech companies, AI startups/tools, consulting reports, industry applications |
 
 ## Project Structure
 
@@ -24,7 +25,8 @@ ai4-product/
 │   ├── 03-development/        # Development & Engineering
 │   ├── 04-management/         # Management & Decision Making
 │   ├── 05-growth-lifecycle/   # Growth & Lifecycle
-│   └── cross-cutting/         # Cross-cutting themes
+│   ├── cross-cutting/         # Cross-cutting themes
+│   └── industry-trends/      # Company research & industry trends
 ├── references/                # Reference lists
 │   ├── academic.md            # Academic papers
 │   ├── industry.md            # Industry & practitioner reports
