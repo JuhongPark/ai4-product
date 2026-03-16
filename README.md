@@ -10,7 +10,7 @@
 | 3 | [Development & Engineering](research/03-development/) | AI in NPD processes, firm growth impact, time-to-market acceleration |
 | 4 | [Management & Decision Making](research/04-management/) | AI-powered PM tools, agentic AI, automated prioritization |
 | 5 | [Growth & Lifecycle](research/05-growth-lifecycle/) | PLM, digital twins, personalization, A/B test automation |
-| 6 | [Cross-Cutting Themes](research/cross-cutting/) | Human-AI collaboration, responsible AI, frameworks & taxonomies |
+| 6 | [Cross-Cutting Themes](research/cross-cutting/) | Human-AI collaboration, responsible AI, AI governance, frameworks & taxonomies |
 | 7 | [Industry Trends](research/industry-trends/) | Tech companies, AI startups/tools, consulting reports, industry applications |
 
 ## Project Structure
