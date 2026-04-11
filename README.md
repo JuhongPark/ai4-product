@@ -29,7 +29,9 @@ ai4-product/
 │   ├── 05-growth-lifecycle/   # Growth & Lifecycle
 │   ├── cross-cutting/         # Cross-cutting themes
 │   └── industry-trends/      # Company research & industry trends
-├── prototypes/                # Working prototypes
+├── product/                   # AI Work Advisor — single-file tool
+│   └── index.html             # Open in any browser, no install needed
+├── prototypes/                # Research prototypes
 │   ├── p1-complementarity-dashboard/  # Selective Complementarity task classifier
 │   ├── p2-aadm-scoring/              # AADM decision scoring tool
 │   ├── p3-design-fiction-kit/         # Workshop protocol & materials
