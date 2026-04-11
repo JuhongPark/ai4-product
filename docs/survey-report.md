@@ -1,6 +1,7 @@
 # AI for Product: Research Survey Report
 
-> Date: 2026-03-07
+> Date: 2026-04-11 (Updated)
+> Original: 2026-03-07
 > Scope: Academic papers, practitioner research, and industry reports (2022-2026)
 
 ---
@@ -79,8 +80,21 @@
   - 58% of Gen Z shoppers already use AI when shopping
   - Source: https://www.bcg.com/publications/2024/brands-must-adapt-as-genai-evolves-product-discovery
 
+### 2.5 AI-Powered Qualitative Research at Scale (NEW — April 2026)
+
+- **"How AI Helps Scale Qualitative Customer Research"** — Korst, Puntoni & Toubia, HBR, April 2026
+  - LLMs overcome the traditional tradeoff between depth and scale in customer research
+  - Anthropic: 80,000+ interviews across 159 countries in 70 languages
+  - Microsoft: 250+ interviews via Listen Labs, timelines reduced from weeks to days
+  - Sweetgreen: one-third cost, five times more responses
+  - Verbal responses to AI interviewers are **7x longer** than typed survey responses
+  - Participants disclose more openly to AI than human interviewers, especially on sensitive topics
+  - Source: https://hbr.org/2026/04/how-ai-helps-scale-qualitative-customer-research
+
+- **AI Research Platform Maturity (2026)**: Synthetic participant parity scores now at 85-92% vs. organic participants
+
 ### Research Gaps — Discovery
-- Limited validation of LLM-generated insights against ground truth customer data
+- Limited validation of LLM-generated insights against ground truth customer data (partially addressed by HBR 2026 case studies)
 - Ethical concerns around synthetic user research replacing real user voices
 - Lack of standardized evaluation metrics for AI-generated customer insights
 
@@ -117,10 +131,20 @@
 - Four fundamentals: transparency, control, consistency, and support when systems fail
 - By 2026, 80%+ organizations will use generative AI; focus shifts to integration quality and leadership
 
+### 3.4 Generative UI & Adaptive Interfaces (NEW — 2026 Update)
+
+- **Gartner (2026)**: 30% of all new apps will use AI-driven adaptive interfaces — up from <5% two years ago
+- **Figma Make**: Helps teams ship 40-60% faster with AI-assisted design
+- Companies excelling at AI-driven personalization generate **40% more revenue**
+- Designer role evolving: building systems and rules, not individual screens — AI co-designing with teams
+- Multimodal interfaces (voice, touch, gesture, visual) emerging as coherent single-experience systems
+- 2026 turning point: emphasis shifts to **trust, safety, and explainability** over raw intelligence
+
 ### Research Gaps — Design
 - Limited academic research on AI-generated UI evaluation methodologies
-- Lack of frameworks for measuring AI design quality vs. human design quality
+- No frameworks for measuring AI design quality vs. human design quality
 - Generative UI is mostly industry-driven; minimal peer-reviewed research
+- Long-term effects of hyper-personalization on user autonomy under-studied
 
 ---
 
@@ -161,11 +185,48 @@
   - Companies using AI in product development: 20-40% time-to-market reduction, 20-30% cost reduction
   - Source: https://www.deloitte.com/us/en/insights/topics/emerging-technologies/gen-ai-industry-product-innovation.html
 
+### 4.4 New Systematic Reviews & Decision Tools (NEW — 2026)
+
+- **"AI in NPD: Systematic Literature Review"** — Vallé et al., Technovation, Vol. 153, May 2026
+  - 98 peer-reviewed articles; 5-dimension conceptual framework grounded in organizational information-processing theory
+  - Key finding: AI effects are **stage-dependent and cumulative** — early ideation quality links to downstream efficiency
+  - Source: https://www.sciencedirect.com/science/article/pii/S0166497226000763
+
+- **"Moneyball for New Product Development"** — Cooper, February 2026
+  - AI-PRISM: Data-driven scoring model with 7 weighted success factors and 20 sub-factors
+  - Addresses the problem that ~80% of NPD investment decisions prove wrong
+  - Now validated through beta testing and ready for public use
+  - Source: https://www.academia.edu/165246907/Moneyball_for_New_Product_Development_Feb_2026_Cooper
+
+- **"Integrating AI into the Front End of NPD"** — Research-Technology Management, 2024
+  - Synthesizing large-scale customer data in the fuzzy front end (FFE) to accelerate concept development
+  - Source: https://www.tandfonline.com/doi/full/10.1080/08956308.2024.2444142
+
+### 4.5 AI for Product Testing & QA (NEW — Gap-Filling Research)
+
+- **"AI-Driven Tools in Modern Software QA"** — Pysmennyi et al., arXiv:2506.16586, 2025
+  - Proof-of-concept: only 8.3% flaky executions of AI-generated test cases
+  - Key challenge: lack of explainability in LLMs for test generation
+  - Source: https://arxiv.org/abs/2506.16586
+
+- **"AI-Powered Test Case Generation and Validation"** — arXiv:2409.05808, 2024
+  - AI enables continuous testing and self-healing test cases
+  - Source: https://arxiv.org/abs/2409.05808
+
+- **"AI + BDD for Software QA"** — Automated Software Engineering (Springer), 2025
+  - NLP for requirements analysis + ML for test prioritization + DL for anomaly detection
+  - Source: https://link.springer.com/article/10.1007/s10515-025-00566-w
+
+- **EY.ai PDLC (March 2026)**: AI-native development platform — 80x delivery acceleration, 95%+ automated test coverage
+  - Source: https://www.ey.com/en_us/newsroom/2026/03/ernst-young-llp-and-8090-launch-ey-ai-pdlc
+
+- 77.7% of QA teams using or planning to use AI in testing; market $55.8B (2024) → $112.5B (2034)
+
 ### Research Gaps — Development
-- AI application in concept testing stage is significantly under-researched
-- No integrative AI solutions spanning multiple NPD phases end-to-end
+- AI application in concept testing stage is significantly under-researched (partially addressed by new QA research)
+- No integrative AI solutions spanning multiple NPD phases end-to-end (partially addressed by Vallé et al. 2026 framework)
 - Absence of systematic frameworks for AI-driven product management
-- Limited empirical studies on AI's impact on software product development quality
+- Limited empirical studies comparing AI-generated vs. human-generated test suites in production
 
 ---
 
@@ -203,11 +264,25 @@
 - **McKinsey State of AI 2025**: 78% of organizations reported using AI in 2024, up from 55% in 2023
   - Source: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
 
+### 5.5 Agentic AI Co-Evolutionary Model (NEW — 2025-2026)
+
+- **"Agentic AI in Product Management: A Co-Evolutionary Model"** — Parikh, arXiv:2507.01069, 2025
+  - PMs repositioned as **"orchestrators of socio-technical ecosystems"**
+  - Co-evolutionary framework maps agentic AI across all PM phases (discovery → launch)
+  - Essential competencies: AI literacy, governance expertise, systems thinking
+  - Synthesizes 70+ sources including leading tech company case studies
+  - Source: https://arxiv.org/abs/2507.01069
+
+- **Enterprise Adoption Reality (March 2026)**: 30% exploring, 38% piloting, 14% ready, only 11% in production
+- **Gartner (2026)**: GenAI + agents → $58B market shake-up in productivity tools; 90% of B2B buying AI-intermediated by 2028
+- **Risk**: >40% of agent projects will fail by 2027 due to governance gaps (Gartner)
+
 ### Research Gaps — Management
-- Agentic PM capabilities are least mature and under-studied
+- Agentic PM capabilities are least mature and under-studied (partially addressed by Parikh 2025 co-evolutionary model)
 - 39.7% of product professionals cite AI-generated insight quality as their biggest concern
 - Limited academic research on AI-augmented product decision-making effectiveness
 - No standardized benchmarks for measuring AI PM tool performance
+- Multi-agent system orchestration for product teams lacks empirical study
 
 ---
 
@@ -249,10 +324,35 @@
 | PepsiCo | AI for product shape and flavor optimization (Cheetos) | Precise product characteristic control |
 | Grammarly | GenAI writing intelligence platform | 30M DAU, $400M ARR |
 
+### 6.5 Consumer Digital Twins & Market Update (NEW — 2025-2026)
+
+- **"AI-enabled consumer digital twins for customer experience"** — Management Review Quarterly (Springer), 2025
+  - Extends digital twin concept from manufacturing into consumer research and CX domains
+  - Source: https://link.springer.com/article/10.1007/s11301-025-00527-3
+
+- **Digital Twin Market**: Projected to reach $12.7B by 2026 (CAGR 38.2%); $110.1B by 2028 (CAGR 61.3%)
+- **Gartner (2026)**: Manufacturing moving toward autonomous operations via digital twins + AI agents
+- **PLM 2024 Conference** (IFIP WG 5.1, Bangkok): 21st international conference on AI and digital twins in PLM
+- AI product development lifecycle now **iterative and continuous** — integrates real-time data, predictive analytics, and automation at every stage
+
+### 6.6 AI-Driven Experimentation & Causal Inference (NEW — Gap-Filling Research)
+
+- **Stanford Causal AI Lab (SCAIL)**: Research on heterogeneous treatment effects from large-scale A/B tests
+  - New book: "Applied Causal Inference Powered by ML and AI" (Chernozhukov, Hansen, Kallus, Spindler)
+  - Source: https://scail.stanford.edu/
+
+- **"InferenceEvolve: Automated Causal Effect Estimators"** — arXiv:2604.04274, April 2026
+  - LLMs navigate complex causal estimation landscapes through evolutionary program synthesis
+  - Source: https://arxiv.org/html/2604.04274
+
+- **AI A/B Testing Evolution**: Adaptive real-time experiments; experimentation converging with personalization
+- **Haus Causal MMM**: Every experiment feeds the model, continuously improves, suggests next experiments
+
 ### Research Gaps — Growth & Lifecycle
 - Limited research on AI for post-launch product optimization
-- Digital twin applications mostly in manufacturing; under-explored in software products
-- AI experimentation platform research is mostly industry-driven, not academic
+- Digital twin applications expanding beyond manufacturing but still under-explored in software products
+- AI experimentation: academic-industry gap narrowing but most tools remain proprietary
+- Long-term product health effects of AI-optimized experiments under-studied
 
 ---
 
@@ -307,6 +407,44 @@
   - Distinguishes AI Agents from Agentic AI with structured taxonomy
   - Source: https://arxiv.org/html/2505.10468v4
 
+### 7.4 AI Governance Priorities 2026 (NEW)
+
+- **Partnership on AI (2026)**: "Six AI Governance Priorities for 2026"
+  - (1) Govern AI agents infrastructure, (2) Strengthen documentation, (3) International coordination, (4) Preserve human voice, (5) Workforce resilience, (6) AI sovereignty
+  - Source: https://partnershiponai.org/resource/six-ai-governance-priorities/
+
+- **Stanford HAI AI Index Report 2026** (Release: April 13, 2026)
+  - 47 countries with active AI legislation, only 12 with enforcement mechanisms
+  - Compliance costs vary 8x between jurisdictions; EU AI Act entered full enforcement January 2026
+  - >60% of AI researchers see lack of interpretability as major adoption barrier
+  - >70% of advanced AI compute controlled by <10 companies (US + China)
+  - Source: https://hai.stanford.edu/ai-index-report
+
+- **MIT Sloan (2026)**: "Looking Ahead at AI and Work in 2026"
+  - "Old governance playbooks not working for AI" — need new frameworks
+  - LLM-ification of data: company databases becoming accessible to LLM agents
+  - 2026 shifts from AI experimentation to deploying at scale
+  - Source: https://mitsloan.mit.edu/ideas-made-to-matter/looking-ahead-ai-and-work-2026
+
+### 7.5 End-to-End AI Product Lifecycle Frameworks (NEW — Gap-Filling Research)
+
+- **EY.ai PDLC (March 2026)**: "Collaborative mesh of AI agents" across full lifecycle — 80x acceleration, 95%+ test coverage
+- **McKinsey PDLC**: AI integration across software PDLC for higher-value work
+- **AWS AI-SDLC**: End-to-end AI integration improving coherence from requirements to deployment
+- **Microsoft AI-SDLC**: Agentic approach with Azure + GitHub ecosystem
+- Key finding: All 2026 frameworks emphasize **multi-agent orchestration** with **human-in-the-loop**
+
+### 7.6 AI Product Team Skills & Organizational Transformation (NEW)
+
+- **"When AI Joins the Product Team, Will Leadership Still Drive Innovation?"** — Srivastava, California Management Review, Feb 2026
+  - P&G: AI-augmented teams **13-16% faster**, **3x likelier** to generate top-tier solutions
+  - ~85% of AI initiatives never reach production; only 10-15% of companies achieve measurable AI impact
+  - Hybrid teams (humans + AI) outperform all alternatives
+  - Source: https://cmr.berkeley.edu/2026/02/when-ai-joins-the-product-team-will-leadership-still-drives-innovation/
+
+- PM role evolution: Feature Builder → AI-Assisted PM → AI Orchestrator → Ecosystem Architect
+- Essential 2026 skills: AI literacy, data fluency, systems thinking, ethical leadership
+
 ---
 
 ## 8. Research Gap Summary & Future Directions
@@ -315,9 +453,9 @@
 
 | # | Gap Area | Description | Severity |
 |---|---------|-------------|----------|
-| 1 | **End-to-End AI Integration** | No integrative AI framework spanning all product lifecycle phases | High |
-| 2 | **NPD Later Stages** | AI in concept testing, product validation, and post-launch optimization under-studied | High |
-| 3 | **Agentic AI for PM** | Least mature capability; limited academic research on autonomous product decisions | High |
+| 1 | **End-to-End AI Integration** | No integrative AI framework spanning all product lifecycle phases — **partially addressed**: EY.ai PDLC, McKinsey PDLC, Vallé et al. (2026) | High |
+| 2 | **NPD Later Stages** | AI in concept testing, product validation, and post-launch optimization — **partially addressed**: AI QA research (Pysmennyi et al., EY.ai PDLC) | High |
+| 3 | **Agentic AI for PM** | Limited academic research — **partially addressed**: Parikh co-evolutionary model (2025) | High |
 | 4 | **Human-AI Complementarity** | Rarely achieved empirically; insufficient understanding of when/how it works | Medium |
 | 5 | **AI Insight Quality** | 39.7% of professionals cite quality concerns; no standardized evaluation metrics | Medium |
 | 6 | **Synthetic User Research Validity** | Ethical and methodological concerns around replacing real users with AI personas | Medium |
@@ -325,6 +463,9 @@
 | 8 | **Software Product PLM** | Digital twin and PLM research concentrated in manufacturing, not software products | Low |
 | 9 | **AI Design Evaluation** | No established frameworks for comparing AI-generated vs. human-generated designs | Medium |
 | 10 | **Cross-Industry Benchmarks** | Lack of standardized benchmarks for AI PM tool effectiveness | Low |
+| 11 | **Multi-Agent PM Orchestration** | Multi-agent systems for product teams lack empirical study | Medium |
+| 12 | **Consumer Digital Twin Validation** | Consumer digital twin methodology nascent; limited empirical validation | Medium |
+| 13 | **AI Governance for Product Teams** | Old governance playbooks not working for AI; new frameworks needed | High |
 
 ### Promising Research Directions
 
@@ -347,6 +488,11 @@ MIT is a leading hub for AI-for-Product research across multiple labs and depart
 - **MIT CSAIL "AI for Software Engineering" (ICML 2025)**: Maps roadblocks beyond code generation — refactoring, large-scale migration, system design
 - **MIT MGAIC (2025)**: 55 seed grants across 250 faculty — projects span manufacturing-aware GenAI, agentic data curation, supply chain risk, and more
 - **MIT Media Lab AHA Initiative**: Multi-disciplinary research on human-AI interaction for decision-making, learning, and wellbeing
+
+### NEW (2026):
+- **MIT Sloan "AI and Work in 2026"**: Faculty predictions — human-LLM accuracy gap, governance crisis, LLM-ification of data, cognitive atrophy risks
+- **MIT CSAIL EnCompass Framework (2026)**: Reduces coding effort for AI agent search implementation by up to 80%
+- **2026 Sloan Research Fellows**: Yoon Kim (NLP/ML), Haihao Lu (large-scale optimization)
 
 > **Full deep-dive**: See [research/mit-research/](../research/mit-research/) for comprehensive coverage of MIT labs, researchers, and publications.
 
@@ -425,3 +571,25 @@ MIT is a leading hub for AI-for-Product research across multiple labs and depart
 32. Siemens. "AI Impact on PLM Global Survey." https://blogs.sw.siemens.com/teamcenter-manufacturing/2026/03/04/ai-impact-on-product-lifecycle-management-global-survey/
 33. MSI Working Paper 25-135 (2025). https://thearf-org-unified-admin.s3.amazonaws.com/MSI/2025/MSI_Report_25-135.pdf
 34. CMU. "How AI Can Strengthen Human Collaboration." https://www.cmu.edu/news/stories/archives/2025/october/
+
+### NEW Sources (April 2026 Update)
+35. Korst, Puntoni & Toubia (2026). "How AI Helps Scale Qualitative Customer Research." HBR. https://hbr.org/2026/04/how-ai-helps-scale-qualitative-customer-research
+36. Vallé et al. (2026). "AI in NPD: Systematic Literature Review." Technovation, Vol. 153. https://www.sciencedirect.com/science/article/pii/S0166497226000763
+37. Cooper (2026). "Moneyball for New Product Development." McMaster University. https://www.academia.edu/165246907/Moneyball_for_New_Product_Development_Feb_2026_Cooper
+38. Parikh (2025). "Agentic AI in Product Management: A Co-Evolutionary Model." arXiv:2507.01069. https://arxiv.org/abs/2507.01069
+39. "AI-enabled consumer digital twins for CX." Management Review Quarterly (Springer), 2025. https://link.springer.com/article/10.1007/s11301-025-00527-3
+40. Partnership on AI (2026). "Six AI Governance Priorities for 2026." https://partnershiponai.org/resource/six-ai-governance-priorities/
+41. Stanford HAI (2026). "AI Index Report 2026." https://hai.stanford.edu/ai-index-report
+42. MIT Sloan (2026). "Looking Ahead at AI and Work in 2026." https://mitsloan.mit.edu/ideas-made-to-matter/looking-ahead-ai-and-work-2026
+43. Gartner (2026). "Strategic Predictions for 2026." https://www.gartner.com/en/articles/strategic-predictions-for-2026
+44. Gartner (2026). "60% of Brands Will Use Agentic AI for 1:1 Interactions by 2028." https://www.gartner.com/en/newsroom/press-releases/2026-01-15-gartner-predicts-60-percent-of-brands-will-use-agentic-ai-to-deliver-streamlined-one-to-one-interactions-by-2028
+45. "Integrating AI into the Front End of NPD." Research-Technology Management, 2024. https://www.tandfonline.com/doi/full/10.1080/08956308.2024.2444142
+46. IFIP WG 5.1 (2024). PLM 2024: AI, Digital Twins, and Smart Technologies. Springer. https://link.springer.com/content/pdf/10.1007/978-3-031-93323-3.pdf
+47. Pysmennyi et al. (2025). "AI-Driven Tools in Modern Software QA." arXiv:2506.16586. https://arxiv.org/abs/2506.16586
+48. "The Future of Software Testing: AI-Powered Test Case Generation." arXiv:2409.05808. https://arxiv.org/abs/2409.05808
+49. "AI + BDD for Software QA." Automated Software Engineering (Springer), 2025. https://link.springer.com/article/10.1007/s10515-025-00566-w
+50. EY (2026). "EY.ai PDLC." https://www.ey.com/en_us/newsroom/2026/03/ernst-young-llp-and-8090-launch-ey-ai-pdlc
+51. "InferenceEvolve: Automated Causal Effect Estimators." arXiv:2604.04274, April 2026. https://arxiv.org/html/2604.04274
+52. Stanford Causal AI Lab. https://scail.stanford.edu/
+53. Srivastava (2026). "When AI Joins the Product Team." California Management Review. https://cmr.berkeley.edu/2026/02/when-ai-joins-the-product-team-will-leadership-still-drives-innovation/
+54. McKinsey. "AI-Enabled Software PDLC." https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/how-an-ai-enabled-software-product-development-life-cycle-will-fuel-innovation

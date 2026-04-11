@@ -15,6 +15,9 @@ Application of generative AI to product design, UX, and prototyping — covering
 - 73% of designers say AI as a design collaborator will have the most impact in 2026
 - 54% of designers report clients want to adopt AI trends without clear use cases (biggest gap)
 - By 2026, 80%+ organizations will use generative AI
+- Gartner: 30% of new apps use AI-driven adaptive interfaces by 2026 (up from <5%)
+- AI-driven personalization leaders generate 40% more revenue
+- Figma Make: 40-60% faster shipping with AI-assisted design
 
 ## Research Gaps
 

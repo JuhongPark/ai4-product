@@ -4,9 +4,9 @@
 
 | # | Gap Area | Severity |
 |---|---------|----------|
-| 1 | **End-to-End AI Integration** — No integrative AI framework spanning all product lifecycle phases | High |
-| 2 | **NPD Later Stages** — AI in concept testing, product validation, and post-launch optimization under-studied | High |
-| 3 | **Agentic AI for PM** — Least mature capability; limited academic research on autonomous product decisions | High |
+| 1 | **End-to-End AI Integration** — No integrative AI framework spanning all product lifecycle phases — *partially addressed*: EY.ai PDLC, McKinsey PDLC, Vallé et al. 2026 | High |
+| 2 | **NPD Later Stages** — AI in concept testing, product validation, and post-launch optimization — *partially addressed*: AI QA research, EY.ai PDLC | High |
+| 3 | **Agentic AI for PM** — Limited academic research — *partially addressed*: Parikh co-evolutionary model (2025) | High |
 | 4 | **Human-AI Complementarity** — Rarely achieved empirically; insufficient understanding of when/how it works | Medium |
 | 5 | **AI Insight Quality** — 39.7% of professionals cite quality concerns; no standardized evaluation metrics | Medium |
 | 6 | **Synthetic User Research Validity** — Ethical and methodological concerns around replacing real users with AI personas | Medium |
@@ -14,6 +14,11 @@
 | 8 | **Software Product PLM** — Digital twin and PLM research concentrated in manufacturing, not software products | Low |
 | 9 | **AI Design Evaluation** — No established frameworks for comparing AI-generated vs. human-generated designs | Medium |
 | 10 | **Cross-Industry Benchmarks** — Lack of standardized benchmarks for AI PM tool effectiveness | Low |
+| 11 | **Multi-Agent PM Orchestration** — Multi-agent systems for product teams lack empirical study | Medium |
+| 12 | **Consumer Digital Twin Validation** — Consumer digital twin methodology nascent; limited empirical validation | Medium |
+| 13 | **AI Governance for Product Teams** — Old governance playbooks not working for AI (MIT Sloan 2026); new operational frameworks needed | High |
+| 14 | **Hyper-Personalization Effects** — Long-term effects of AI-driven hyper-personalization on user autonomy under-studied | Medium |
+| 15 | **AI Cognitive Atrophy** — Risk of diminishing human creative/cognitive abilities through AI reliance (Rigobon, MIT 2026) | Medium |
 
 ## Promising Research Directions
 
@@ -24,3 +29,6 @@
 5. **LLM-Based Product Intelligence** — Foundation models for customer insight synthesis, competitive analysis, and product strategy
 6. **Generative UI/UX Systems** — Academic study of dynamically generated interfaces and their impact on UX
 7. **AI for Product Quality Assurance** — Automated testing, validation, and quality prediction across the development lifecycle
+8. **Data-Driven NPD Decision Support** — Validated AI scoring models (e.g., AI-PRISM) for go/kill decisions in product development
+9. **AI Governance Operationalization** — Moving from AI governance principles to operational controls for product teams (informed by Partnership on AI 2026 priorities)
+10. **Consumer Digital Twins for CX** — AI-enabled digital replicas of customers for experience research and personalization

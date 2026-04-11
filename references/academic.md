@@ -42,3 +42,29 @@
 23. "Responsible AI Governance" (2024). ScienceDirect. https://www.sciencedirect.com/science/article/pii/S0963868724000672
 24. "Bias Mitigation in Generative AI" (2025). Springer. https://link.springer.com/article/10.1007/s43681-025-00721-9
 25. "AI Agents vs. Agentic AI" (2025). arXiv. https://arxiv.org/html/2505.10468v4
+
+## NEW (April 2026 Update)
+
+### Development & Engineering
+32. Vallé et al. (2026). "AI in NPD: Systematic Literature Review." Technovation, Vol. 153. https://www.sciencedirect.com/science/article/pii/S0166497226000763
+33. Cooper (2026). "Moneyball for New Product Development." McMaster University. https://www.academia.edu/165246907/Moneyball_for_New_Product_Development_Feb_2026_Cooper
+34. "Integrating AI into the Front End of NPD" (2024). Research-Technology Management. https://www.tandfonline.com/doi/full/10.1080/08956308.2024.2444142
+
+### Management & Decision Making
+35. Parikh (2025). "Agentic AI in Product Management: A Co-Evolutionary Model." arXiv:2507.01069. https://arxiv.org/abs/2507.01069
+
+### Growth & Lifecycle
+36. "AI-enabled consumer digital twins for CX" (2025). Management Review Quarterly (Springer). https://link.springer.com/article/10.1007/s11301-025-00527-3
+37. IFIP WG 5.1 (2024). PLM 2024: AI, Digital Twins, and Smart Technologies. Springer. https://link.springer.com/content/pdf/10.1007/978-3-031-93323-3.pdf
+
+### Product Testing & QA
+38. Pysmennyi et al. (2025). "AI-Driven Tools in Modern Software QA." arXiv:2506.16586. https://arxiv.org/abs/2506.16586
+39. "The Future of Software Testing: AI-Powered Test Case Generation." arXiv:2409.05808. https://arxiv.org/abs/2409.05808
+40. "AI + BDD for Software QA." Automated Software Engineering (Springer), 2025. https://link.springer.com/article/10.1007/s10515-025-00566-w
+
+### Experimentation & Causal Inference
+41. "InferenceEvolve: Automated Causal Effect Estimators." arXiv:2604.04274, April 2026. https://arxiv.org/html/2604.04274
+42. Stanford Causal AI Lab (SCAIL). https://scail.stanford.edu/
+
+### Product Team & Organizational Transformation
+43. Srivastava (2026). "When AI Joins the Product Team." California Management Review. https://cmr.berkeley.edu/2026/02/when-ai-joins-the-product-team-will-leadership-still-drives-innovation/
