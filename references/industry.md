@@ -92,3 +92,4 @@
 61. PepsiCo + Siemens + NVIDIA (2025). "Industry-First AI and Digital Twin Collaboration." https://www.pepsico.com/newsroom/press-releases/2025/pepsico-announces-industry-first-ai-and-digital-twin-collaboration-with-siemens-and-nvidia
 62. Klarna. "AI Assistant Handles Two-Thirds of Customer Service Chats." https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/
 63. Tech.co (2025). "Klarna Reverses AI Customer Service Replacement." https://tech.co/news/klarna-reverses-ai-overhaul
+64. Cognition (2025). "Devin's 2025 Performance Review." https://cognition.ai/blog/devin-annual-performance-review-2025

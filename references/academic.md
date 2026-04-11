@@ -68,3 +68,8 @@
 
 ### Product Team & Organizational Transformation
 43. Srivastava (2026). "When AI Joins the Product Team." California Management Review. https://cmr.berkeley.edu/2026/02/when-ai-joins-the-product-team-will-leadership-still-drives-innovation/
+
+### Human-AI Complementarity
+44. Vaccaro et al. (2024). "When combinations of humans and AI are useful: A systematic review and meta-analysis." Nature Human Behaviour. https://www.nature.com/articles/s41562-024-02024-1
+45. "Human-AI complementarity needs augmentation, not emulation." Nature Reviews Psychology, 2026. https://www.nature.com/articles/s44159-026-00536-3
+46. IEEE (2024). "Why AI Projects Fail: Lessons From NPD." IEEE Engineering Management Review. https://ieeexplore.ieee.org/document/10572277

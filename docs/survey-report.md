@@ -464,6 +464,26 @@
 - PM role evolution: Feature Builder → AI-Assisted PM → AI Orchestrator → Ecosystem Architect
 - Essential 2026 skills: AI literacy, data fluency, systems thinking, ethical leadership
 
+### 7.7 Why Humans Remain Essential: Empirical Evidence (NEW)
+
+- **Nature Human Behaviour Meta-Analysis (2024)**: 106 experiments, 370 effect sizes
+  - Human+AI > humans alone, but Human+AI does NOT beat AI alone on average
+  - **Decision tasks (85% of studies)**: AI alone is better — adding humans hurts performance
+  - **Creation tasks (10%)**: Human+AI is better — combination helps
+  - Key insight: "When AI outperforms humans, adding humans degrades performance. When humans outperform AI, combination is best."
+  - Source: https://www.nature.com/articles/s41562-024-02024-1
+
+- **Nature Reviews Psychology (2026)**: "Human-AI complementarity needs augmentation, not emulation"
+  - Source: https://www.nature.com/articles/s44159-026-00536-3
+
+- **Devin AI (2025)**: "First AI software engineer" — 15% success rate on independent tests; senior at understanding, junior at execution; unpredictable which tasks succeed
+  - Source: https://cognition.ai/blog/devin-annual-performance-review-2025
+
+- **The fundamental gap**: AI excels at "how" (execution) but cannot do "what" (what to build) or "why" (why it matters). Product success depends on the latter — judgment under genuine uncertainty.
+- **The right model**: Selective complementarity — AI offers recommendations only when humans are likely uncertain (Stanford, 2025)
+
+> **Full analysis**: See [research/cross-cutting/papers/why-humans-remain-essential.md](../research/cross-cutting/papers/why-humans-remain-essential.md)
+
 ---
 
 ## 8. Research Gap Summary & Future Directions
@@ -475,7 +495,7 @@
 | 1 | **End-to-End AI Integration** | No integrative AI framework spanning all product lifecycle phases — **frameworks exist but no production-verified full automation** (EY.ai PDLC unverified; Klarna reversal) | High |
 | 2 | **NPD Later Stages** | AI in concept testing, product validation, and post-launch optimization — **partially addressed**: AI QA research (Pysmennyi et al., EY.ai PDLC) | High |
 | 3 | **Agentic AI for PM** | Limited academic research — **partially addressed**: Parikh co-evolutionary model (2025) | High |
-| 4 | **Human-AI Complementarity** | Rarely achieved empirically; insufficient understanding of when/how it works | Medium |
+| 4 | **Human-AI Complementarity** | Nature meta-analysis (106 experiments): complementarity works for **creation tasks** but not decision tasks; selective complementarity most promising — **empirically clarified but not solved** | High |
 | 5 | **AI Insight Quality** | 39.7% of professionals cite quality concerns; no standardized evaluation metrics | Medium |
 | 6 | **Synthetic User Research Validity** | Ethical and methodological concerns around replacing real users with AI personas | Medium |
 | 7 | **Generative UI Research** | Mostly industry-driven; minimal peer-reviewed academic work | Medium |
@@ -631,3 +651,7 @@ MIT is a leading hub for AI-for-Product research across multiple labs and depart
 57. Salesforce. "Agentforce Metrics." https://www.salesforce.com/agentforce/metrics/
 58. PepsiCo + Siemens + NVIDIA (2025). "AI and Digital Twin Collaboration." https://www.pepsico.com/newsroom/press-releases/2025/pepsico-announces-industry-first-ai-and-digital-twin-collaboration-with-siemens-and-nvidia
 59. Klarna AI Reversal (2025). https://tech.co/news/klarna-reverses-ai-overhaul
+60. Vaccaro et al. (2024). "When combinations of humans and AI are useful." Nature Human Behaviour. https://www.nature.com/articles/s41562-024-02024-1
+61. "Human-AI complementarity needs augmentation, not emulation." Nature Reviews Psychology, 2026. https://www.nature.com/articles/s44159-026-00536-3
+62. Cognition (2025). "Devin's 2025 Performance Review." https://cognition.ai/blog/devin-annual-performance-review-2025
+63. IEEE (2024). "Why AI Projects Fail: Lessons From NPD." IEEE Eng Mgmt Review. https://ieeexplore.ieee.org/document/10572277

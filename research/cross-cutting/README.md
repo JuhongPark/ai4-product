@@ -8,6 +8,9 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - Trust in AI is multidimensional (technical/cognitive, emotional, social) and evolves dynamically
 - Complementary team performance (human + AI > either alone) has rarely been observed empirically
 - Shift from viewing AI as replacement threat to collaborative digital colleague
+- **Nature meta-analysis (106 experiments)**: Human+AI helps in creation tasks; hurts in decision tasks (NEW)
+- **Selective complementarity**: AI recommends only when human is uncertain — best outcomes (Stanford 2025)
+- **"Removing humans" experiments**: Klarna (reversal), Devin (15% success) — full autonomy fails (NEW)
 
 ## Responsible AI in Product Design
 - Ethics by Design: adopted by European Commission for AI project ethics review
