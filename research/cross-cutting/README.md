@@ -49,11 +49,19 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - Misaligned incentives: no actor in the system benefits from saying "stop using AI"
 
 ## The AI Capability-Utilization Gap (NEW)
-- AI is good; the problem is human cognition and organizational design
 - $250B invested, 1.9% productivity gain, 90% of CEOs report no impact (Solow paradox redux)
 - HBR 2026: AI doesn't reduce work — it intensifies it (task expansion, boundary collapse, multitasking)
 - Only proven debiasing method: cognitive forcing functions (form judgment before seeing AI recommendation)
 - Business implication: "how to make humans better at using AI" > "how to make AI better"
+
+## AI Technical Barriers (NEW — corrects earlier overstatement)
+- Hallucination: 15-52% across models; best 0.7%; RAG cuts 71% — improving but not solved
+- Context window: advertised 1-2M tokens, effective can be 99% lower (Chroma 2025)
+- Multi-step reasoning: 85% per-step → 20% at 10 steps (exponential, fundamental)
+- Cost: 10x/year decline (rapidly solving); infrastructure still #1 barrier for 44% of firms
+- Regulation: EU AI Act €35M penalties; CLOUD Act conflicts; 61% EU CIOs moving to local providers
+- Two permanently hard: multi-step collapse (mathematical) + human automation bias (cognitive)
+- Two rapidly dissolving: inference cost + hallucination in controlled domains
 
 ## Speculative Methods as Research Tools (NEW)
 - Design fiction: HCI 5th wave method — creates diegetic prototypes to study futures before building

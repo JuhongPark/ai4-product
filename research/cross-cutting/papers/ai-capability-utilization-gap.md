@@ -20,11 +20,13 @@ Robert Solow (1987, on IT): "You can see the computer age everywhere but in the 
 
 ---
 
-## Three Layers of Failure (Technology Is Not One of Them)
+## Three Layers of Failure
+
+**Correction**: An earlier version of this document stated "Technology Is Not One of Them." This was an overstatement. AI has real technical barriers — hallucination, context limits, multi-step reasoning collapse, cost, and regulation — documented in [ai-technical-barriers.md](ai-technical-barriers.md). However, the evidence shows that organizational and cognitive factors cause MORE failures than technical ones (MIT: 95% of failures are organizational, not technical).
 
 ### Layer 1: Human Cognitive Limitations
 
-AI works fine. Humans interacting with AI don't.
+Humans interacting with AI introduce systematic errors.
 
 | Human Limitation | Evidence | Why It Matters Even When AI Is Good |
 |-----------------|----------|-------------------------------------|
