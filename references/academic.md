@@ -77,3 +77,11 @@
 48. "Three Challenges for AI-Assisted Decision-Making." Perspectives on Psychological Science, 2024. https://journals.sagepub.com/doi/full/10.1177/17456916231181102
 49. "Design principles for AI-augmented decision making." EJIS, 2024. https://www.tandfonline.com/doi/full/10.1080/0960085X.2024.2330402
 50. "AI and Strategic Decision-Making: Evidence from Entrepreneurs." Strategy Science, 2024. https://pubsonline.informs.org/doi/10.1287/stsc.2024.0190
+
+### Speculative Methods & Anticipatory Ethics
+51. Wadinambiarachchi et al. (2025). "Imagining Design Workflows in Agentic AI Futures." https://arxiv.org/html/2509.20731v1
+52. Johnson (2011). "Science Fiction Prototyping." Springer. https://link.springer.com/book/10.1007/978-3-031-01796-4
+53. Wu (2013). "Imagination Workshops: SFP for Business Innovation." Futures, Vol. 50. https://www.sciencedirect.com/science/article/abs/pii/S0016328713000505
+54. Lazar (2024). "Anticipatory AI Ethics." Knight First Amendment Institute, Columbia. https://knightcolumbia.org/content/anticipatory-ai-ethics
+55. Perez-Ortiz (2025). "From Prediction to Foresight." arXiv:2511.21570. https://arxiv.org/abs/2511.21570
+56. Lin (2023). "Generative AI Futures: A Speculative Design Exploration." ACM C&C. https://dl.acm.org/doi/10.1145/3591196.3596616
