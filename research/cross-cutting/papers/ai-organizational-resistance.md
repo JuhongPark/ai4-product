@@ -679,7 +679,7 @@ AI rollout is heading toward failure:
    (20% more PRs, 23.5% more incidents) is a red flag that AI is being used without
    appropriate calibration.
 5. **Sentiment decline after initial enthusiasm:** A post-honeymoon drop in satisfaction
-   that is not addressed quickly can calcify into permanent resistance.
+   that is not addressed quickly can calcify into entrenched, difficult-to-reverse resistance.
 6. **No workflow redesign:** If AI tools are bolted onto existing processes without any
    process change, value realization will plateau and adoption will regress.
 

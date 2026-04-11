@@ -17,7 +17,7 @@
 
 | Barrier | Description |
 |---------|-------------|
-| **Organizational design** | 95% failure stems from structure, not technology (MIT) |
+| **Organizational design** | Organizational factors are the primary driver of failure (MIT: 95%); technical barriers also contribute (see ai-technical-barriers.md) |
 | **Phase disconnection** | Per-phase AI tools exist, but no interconnected pipeline across lifecycle |
 | **Human judgment points** | Strategy, ethics, creative vision cannot be automated (CMR 2026) |
 | **Data silos** | Data formats and systems fragmented across discovery → design → dev → ops |

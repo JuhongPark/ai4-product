@@ -47,7 +47,7 @@ Empirical work drawing on panel data from 2015--2024 suggests that firms adoptin
 
 ### 2.4 ROI Remains Uneven and Difficult to Measure
 
-Despite positive average effects, a substantial fraction of AI investments fail to deliver measurable ROI. Industry estimates (Gartner, McKinsey, BCG) suggest that only 10--20% of AI proof-of-concept projects reach production deployment. The "AI paradox" -- where aggregate investment grows rapidly while measurable productivity gains remain elusive at the macro level -- echoes earlier debates about the IT productivity paradox (Solow, 1987; Brynjolfsson, 1993).
+Despite positive average effects, a substantial fraction of AI investments fail to deliver measurable ROI. MIT's GenAI Divide report (NANDA, 2025) found that 95% of generative AI pilots fail to deliver measurable business impact, consistent with broader estimates that only 5-20% of AI projects reach meaningful production deployment (the range depends on how "success" is defined — business impact vs. mere production deployment). The "AI paradox" — where aggregate investment grows rapidly while measurable productivity gains remain elusive at the macro level — echoes earlier debates about the IT productivity paradox (Solow, 1987; Brynjolfsson, 1993).
 
 ### 2.5 Patent Activity as a Leading Indicator
 
