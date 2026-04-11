@@ -11,6 +11,8 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - **Nature meta-analysis (106 experiments)**: Human+AI helps in creation tasks; hurts in decision tasks (NEW)
 - **Selective complementarity**: AI recommends only when human is uncertain — best outcomes (Stanford 2025)
 - **"Removing humans" experiments**: Klarna (reversal), Devin (15% success) — full autonomy fails (NEW)
+- **Selective complementarity framework**: Phase-by-phase mapping of when to use AI vs humans (NEW — original analysis)
+- **Successful 5% patterns**: 7 common patterns from Stanford Playbook (51 cases) + MIT NANDA (NEW — original analysis)
 
 ## Responsible AI in Product Design
 - Ethics by Design: adopted by European Commission for AI project ethics review
