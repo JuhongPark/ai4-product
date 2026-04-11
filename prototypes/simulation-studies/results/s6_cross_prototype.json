@@ -1,0 +1,98 @@
+{
+  "consistency_rate": 0.827,
+  "consistent": 81,
+  "inconsistent": 17,
+  "total": 98,
+  "sample_inconsistencies": [
+    {
+      "desc": "Design a new onboarding flow for mobile users",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Create 5 visual design variations for the landing page",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Define the brand voice guidelines for AI-generated content",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Prototype an adaptive UI that changes based on user behavior",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Write microcopy for error states across the app",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Design accessibility improvements for screen readers",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Create motion design specifications for page transitions",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Decide color palette for dark mode",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Write the launch announcement blog post",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Design an AI-powered customer support chatbot",
+      "p1_alloc": "Human+AI collaboration",
+      "p2_role": "ai_absent",
+      "expected_roles": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    }
+  ]
+}

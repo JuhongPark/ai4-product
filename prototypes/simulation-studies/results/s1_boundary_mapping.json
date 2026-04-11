@@ -1,0 +1,108 @@
+{
+  "role_volume": {
+    "ai_absent": 32,
+    "ai_informs": 33,
+    "ai_assists": 30,
+    "ai_recommends": 22,
+    "ai_decides": 8
+  },
+  "boundary_count": 92,
+  "boundary_fraction": 0.736,
+  "dimension_influence": {
+    "D": 1,
+    "R": 0,
+    "S": 1
+  },
+  "boundary_points_sample": [
+    {
+      "d": 1,
+      "r": 2,
+      "s": 3,
+      "role": "ai_absent",
+      "adjacent_roles": [
+        "ai_informs"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 2,
+      "s": 4,
+      "role": "ai_absent",
+      "adjacent_roles": [
+        "ai_informs"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 2,
+      "s": 5,
+      "role": "ai_absent",
+      "adjacent_roles": [
+        "ai_informs"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 3,
+      "s": 2,
+      "role": "ai_absent",
+      "adjacent_roles": [
+        "ai_informs"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 3,
+      "s": 3,
+      "role": "ai_informs",
+      "adjacent_roles": [
+        "ai_absent"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 3,
+      "s": 4,
+      "role": "ai_informs",
+      "adjacent_roles": [
+        "ai_absent"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 3,
+      "s": 5,
+      "role": "ai_informs",
+      "adjacent_roles": [
+        "ai_absent"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 4,
+      "s": 2,
+      "role": "ai_absent",
+      "adjacent_roles": [
+        "ai_informs"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 4,
+      "s": 3,
+      "role": "ai_informs",
+      "adjacent_roles": [
+        "ai_absent"
+      ]
+    },
+    {
+      "d": 1,
+      "r": 5,
+      "s": 2,
+      "role": "ai_absent",
+      "adjacent_roles": [
+        "ai_informs"
+      ]
+    }
+  ]
+}
