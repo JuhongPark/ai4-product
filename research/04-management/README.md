@@ -11,7 +11,7 @@ Current state and outlook of AI-powered PM tools, agentic AI, and automated deci
 - **Agentic AI in Product Workflows** — Task-specific AI agents, low-code/no-code deployment
 - **Industry Perspectives** — HBR, McKinsey viewpoints
 - **Agentic AI Co-Evolutionary Model** — PMs as orchestrators of socio-technical ecosystems (Parikh, 2025) (NEW)
-- **AI-Augmented Decision Framework (AADM)** — D/R/S scoring model for AI role at each decision point (NEW — original proposal)
+- **AI-Augmented Decision Framework (AADM v2)** — D/R/S/C scoring model (Data, Reversibility, Subjectivity, Creativity) for AI role at each decision point (NEW — original proposal)
 
 ## Key Stats
 

@@ -66,7 +66,7 @@ Source: https://link.springer.com/book/10.1007/978-3-031-01796-4
 
 ### Research Implication for ai4-product
 
-SFP provides a **structured method to explore the "what to build" question** that our AADM framework identifies as the domain where AI is least useful (low Data, low Reversibility, low Subjectivity → "AI Absent" zone).
+SFP provides a **structured method to explore the "what to build" question** that our AADM v2 framework identifies as the domain where AI is least useful (low Data, low Reversibility, low Creativity → "AI Absent" zone).
 
 **Paradox resolved**: The decisions that AI can't help with (strategic vision, "what to build next") are precisely where speculative methods are most valuable. SFP fills the gap that AI leaves.
 

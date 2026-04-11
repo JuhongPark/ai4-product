@@ -138,7 +138,7 @@ Based on the Nature meta-analysis, Stanford selective complementarity research, 
 | Full lifecycle application | **Proposed** — no production validation yet |
 
 ### Research Needed
-1. Empirical validation of D/R/S scoring in real product teams
+1. Empirical validation of D/R/S/C scoring in real product teams
 2. Longitudinal study of AADM application across multiple product cycles
 3. Cross-industry validation (software vs hardware vs service products)
 4. Dynamic reassessment: how quickly should AI roles shift as capabilities improve?
