@@ -41,6 +41,13 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - PM role evolution: Feature Builder → AI-Assisted PM → AI Orchestrator → Ecosystem Architect
 - Essential skills: AI literacy, data fluency, systems thinking, ethical leadership
 
+## The Research-Market Gap (NEW)
+- Market pushes "AI everywhere"; research says selective use outperforms universal use
+- Automation bias: 47% accept incorrect AI outputs; overreliance worsens with prolonged use
+- Code quality paradox: 55% faster but code churn doubled, 87% Copilot PRs introduce vulnerabilities
+- Oversight fatigue: HITL breaks down at scale (200th approval ≠ 1st approval)
+- Misaligned incentives: no actor in the system benefits from saying "stop using AI"
+
 ## Speculative Methods as Research Tools (NEW)
 - Design fiction: HCI 5th wave method — creates diegetic prototypes to study futures before building
 - SF prototyping (Intel/Johnson): fills AADM "AI Absent" zone with structured imagination
