@@ -41,6 +41,12 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - PM role evolution: Feature Builder → AI-Assisted PM → AI Orchestrator → Ecosystem Architect
 - Essential skills: AI literacy, data fluency, systems thinking, ethical leadership
 
+## Speculative Methods as Research Tools (NEW)
+- Design fiction: HCI 5th wave method — creates diegetic prototypes to study futures before building
+- SF prototyping (Intel/Johnson): fills AADM "AI Absent" zone with structured imagination
+- Anticipatory ethics (Lazar, Columbia): "technological horizon" method for governance risk identification
+- WEF 2025: 2/3 of foresight practitioners already use AI in scenario work
+
 ## AI Frameworks & Taxonomies
 - OECD Sectoral Taxonomy of AI Intensity (2024) — complementarity measure for AI exposure and productivity
 - AI Agents vs. Agentic AI — structured conceptual taxonomy distinguishing the two

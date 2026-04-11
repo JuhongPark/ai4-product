@@ -527,6 +527,29 @@ Status: **Proposed framework requiring empirical validation.**
 
 > **Full framework**: See [research/04-management/papers/ai-product-decision-framework.md](../research/04-management/papers/ai-product-decision-framework.md)
 
+### 7.11 Speculative Methods as Research Tools for AI-for-Product (NEW — Original Analysis)
+
+Design fiction, SF prototyping, and anticipatory ethics are not storytelling — they are research methods that fill a specific gap: **studying futures that don't exist yet**.
+
+**Design Fiction** (HCI 5th wave method):
+- Creates "materialised thought experiments" — diegetic prototypes that elicit requirements before systems are built
+- Wadinambiarachchi et al. (2025): Fictional AI agent "Idy" revealed 5 designer-wanted agent roles and that designers insist on retaining creative authority — a **research result**, not a story
+- Source: https://arxiv.org/html/2509.20731v1
+
+**Science Fiction Prototyping** (Johnson/Intel, empirically validated):
+- SFP fills the AADM "AI Absent" zone — where AI can't help, structured human imagination can
+- Wu (2013, *Futures*): Empirical evidence from UK small businesses; most effective for long-term product innovation
+- Corporate adoption: Intel (chip specifications), Visa (payments futures), Shell (50 years of scenario planning)
+
+**Anticipatory Ethics** (Lazar, Columbia/ANU 2024):
+- "Technological horizon" method: analyze affordances of current AI tools that could produce harm
+- Transforms governance gap from descriptive ("governance is needed") to prescriptive ("here's what to prevent and how")
+- Source: https://knightcolumbia.org/content/anticipatory-ai-ethics
+
+**Meta-insight**: Our three frameworks (Selective Complementarity, 5% Patterns, AADM) all identify a zone where AI has no useful role — strategic vision, ethical judgment, "what to build." Speculative methods are the research toolkit for that zone.
+
+> **Full analysis**: See [research/cross-cutting/papers/speculative-methods-research-implications.md](../research/cross-cutting/papers/speculative-methods-research-implications.md)
+
 ---
 
 ## 8. Research Gap Summary & Future Directions
@@ -561,6 +584,7 @@ Status: **Proposed framework requiring empirical validation.**
 8. **Selective Complementarity in Product Teams** — Empirical validation of when to use AI vs humans at each lifecycle phase; extending Nature meta-analysis to product-specific tasks *(NEW)*
 9. **AI-Augmented Decision Framework (AADM) Validation** — Empirical testing of the D/R/S scoring model across product organizations and industries *(NEW — proposed)*
 10. **Success Pattern Replication** — Can the 7 patterns from the successful 5% be codified into a repeatable deployment methodology? *(NEW)*
+11. **Speculative Methods for AI-for-Product** — Design fiction workshops, anticipatory ethics audits, and SFP for exploring futures that empirical methods can't reach *(NEW)*
 
 ---
 
@@ -705,3 +729,9 @@ MIT is a leading hub for AI-for-Product research across multiple labs and depart
 65. "Three Challenges for AI-Assisted Decision-Making." Perspectives on Psychological Science, 2024. https://journals.sagepub.com/doi/full/10.1177/17456916231181102
 66. "Design principles for AI-augmented decision making." EJIS, 2024. https://www.tandfonline.com/doi/full/10.1080/0960085X.2024.2330402
 67. "AI and Strategic Decision-Making: Evidence from Entrepreneurs." Strategy Science, 2024. https://pubsonline.informs.org/doi/10.1287/stsc.2024.0190
+68. Wadinambiarachchi et al. (2025). "Imagining Design Workflows in Agentic AI Futures." https://arxiv.org/html/2509.20731v1
+69. Johnson (2011). "Science Fiction Prototyping." Springer. https://link.springer.com/book/10.1007/978-3-031-01796-4
+70. Wu (2013). "Imagination Workshops: SFP for Business Innovation." Futures, Vol. 50. https://www.sciencedirect.com/science/article/abs/pii/S0016328713000505
+71. Lazar (2024). "Anticipatory AI Ethics." Knight First Amendment Institute. https://knightcolumbia.org/content/anticipatory-ai-ethics
+72. Perez-Ortiz (2025). "From Prediction to Foresight." arXiv:2511.21570. https://arxiv.org/abs/2511.21570
+73. Lin (2023). "Generative AI Futures: A Speculative Design Exploration." ACM C&C. https://dl.acm.org/doi/10.1145/3591196.3596616
