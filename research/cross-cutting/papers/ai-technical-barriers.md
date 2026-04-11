@@ -166,31 +166,53 @@ Layer 3: Organizational Barriers
 └── J-curve abandonment (quit during performance dip)
 ```
 
-### Which Barriers Are Shrinking vs Persistent
+### Which Barriers Are Shrinking vs Persistent (Revised Assessment)
 
-| Barrier | Shrinking? | Rate | Blocking Horizon |
-|---------|-----------|------|-----------------|
-| Hallucination | Yes | ~64% improvement/year | 1-2 years (for most domains) |
-| Context window | Yes | ~4x/year | 1-2 years |
-| Multi-step reasoning | **Slowly** | Incremental | **3-5+ years** (fundamental) |
-| Inference cost | **Fast** | 10x/year | ~Solved for most uses by 2027 |
-| Regulation | **Not shrinking** | Increasing | **Permanent** (by design) |
-| Automation bias | **Not shrinking** | No improvement trend | **Permanent** (human nature) |
-| Oversight fatigue | **Not shrinking** | Worsens with more AI | **Permanent** |
-| Organizational readiness | Slowly | Org change is slow | 3-5 years |
+| Barrier | Trajectory | Rate | Realistic Horizon | Notes |
+|---------|-----------|------|-------------------|-------|
+| Hallucination | Shrinking | ~64%/year | 1-2 years (most domains) | RAG cuts 71%; best models at 0.7% |
+| Context window | Shrinking | ~4x/year | 1-2 years | But effective use lags advertised by up to 99% |
+| Inference cost | Shrinking fast | 10x/year | ~Solved by 2027 | $60→$0.06/M tokens in 5 years |
+| Multi-step reasoning | **Shrinking, but slowly** | Incremental | **3-5 years (not "permanent")** | Math/logic improving fast (o3: 96.7%); real-world tasks much slower; SWE-bench Pro still 23% |
+| Automation bias | **Not eliminable, but manageable** | — | **Ongoing (like aviation CRM)** | 40 years of CRM reduced but didn't eliminate it; cognitive forcing functions are the best tool |
+| Oversight fatigue | **Worsens with scale** | — | **Ongoing** | Requires architectural solutions (consent-first, confidence-weighted escalation) |
+| Regulation | **Oscillating, net increasing** | — | **Ongoing** | EU AI Act delayed 1.5yr but not repealed; 47 countries legislating; industry pushback creates zigzag |
+| Organizational readiness | Slowly improving | — | 3-5 years | Slowest-moving layer |
 
-### The Bottom Line
+### Correcting the "Permanent" Claim
 
-Two barriers are **structurally permanent**:
-1. **Multi-step reasoning collapse** — exponential error accumulation is mathematical, not engineering
-2. **Human automation bias** — cognitive psychology, not fixable by better AI
+The earlier version of this document labeled multi-step reasoning, automation bias, and regulation as "permanently hard." This was an overstatement.
 
-Two barriers are **rapidly dissolving**:
-1. **Inference cost** — 10x/year, approaching commodity pricing
-2. **Hallucination in controlled domains** — RAG + grounding getting effective
+**Multi-step reasoning**: Not permanent. Math/logic tasks are improving rapidly (o3 reached Math Olympiad gold level in 7 months; Claude Opus 4.6 solved an open graph theory problem). However, real-world unstructured tasks (product development) improve much slower than benchmarks suggest. The exponential error accumulation (85%^10 = 20%) is mathematical, but per-step accuracy IS improving. Realistic view: significantly better in 3-5 years, but not "solved" for complex real-world workflows.
 
-One barrier is **externally imposed and growing**:
-1. **Regulation** — EU AI Act is just the beginning; more jurisdictions will follow
+**Automation bias**: Not eliminable, but manageable. Aviation's Crew Resource Management (CRM) has spent 40 years reducing automation bias in cockpits — successfully, but not completely. Key insight from NASA: "cannot be easily overcome by training" — BUT training with deliberate system errors, social accountability, and system redesign (framing AI output as "suggestion" not "recommendation") all measurably reduce it. It's like workplace safety: you manage it continuously, you don't solve it once.
+
+**Regulation**: Not monotonically increasing. The EU delayed AI Act implementation by 1.5 years under industry pressure. The Digital Omnibus weakened several provisions. 69% of 2025 EU Commission meetings were with business groups. But regulation doesn't disappear — it zigzags. AI incidents ($4.4B in losses, EY 2025) create pressure to re-strengthen. Long-term trend is still more regulation, but the path is not straight.
+
+### The Revised Bottom Line
+
+**Rapidly dissolving** (1-2 years):
+- Inference cost (10x/year decline)
+- Hallucination in controlled domains (RAG + grounding)
+
+**Improving but not solved** (3-5 years):
+- Multi-step reasoning (math fast, real-world slow)
+- Context window (growing but effective use lags)
+- Organizational readiness
+
+**Manageable but not eliminable** (ongoing):
+- Automation bias (CRM-like continuous management)
+- Oversight fatigue (architectural redesign needed)
+- Regulation (zigzag trajectory, net increasing)
+
+### Business Implication of Revised Assessment
+
+| Barrier | Startup Window | What Changes |
+|---------|---------------|-------------|
+| Hallucination tools | **1-2 year window** — models will largely self-correct | Build for high-stakes domains (legal, medical) where even 0.7% is too much |
+| Multi-step orchestration | **3-5 year window** — models will absorb simple orchestration | Focus on complex, domain-specific workflows that models won't handle for years |
+| Cognitive bias management | **Ongoing market** — like workplace safety, never "done" | CRM-like training + system design; subscription/services model |
+| Regulation compliance | **Zigzag but growing** — short-term relaxation, long-term tightening | Build for the long-term trend, not the current political moment |
 
 ---
 

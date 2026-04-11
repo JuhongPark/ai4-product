@@ -60,8 +60,10 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - Multi-step reasoning: 85% per-step → 20% at 10 steps (exponential, fundamental)
 - Cost: 10x/year decline (rapidly solving); infrastructure still #1 barrier for 44% of firms
 - Regulation: EU AI Act €35M penalties; CLOUD Act conflicts; 61% EU CIOs moving to local providers
-- Two permanently hard: multi-step collapse (mathematical) + human automation bias (cognitive)
-- Two rapidly dissolving: inference cost + hallucination in controlled domains
+- Rapidly dissolving (1-2yr): inference cost (10x/yr) + hallucination (RAG cuts 71%)
+- Improving but not solved (3-5yr): multi-step reasoning (math fast, real-world slow)
+- Manageable not eliminable (ongoing): automation bias (CRM-like), regulation (zigzag)
+- Corrects "permanent" claim: nothing is truly permanent, but some barriers need continuous management like workplace safety
 
 ## Speculative Methods as Research Tools (NEW)
 - Design fiction: HCI 5th wave method — creates diegetic prototypes to study futures before building
