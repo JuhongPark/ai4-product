@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Work Advisor</title>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --surface2: #1a1a26;
+  --border: #2a2a3a;
+  --text: #e0e0e8;
+  --text2: #8888a0;
+  --accent: #6366f1;
+  --green: #22c55e;
+  --blue: #3b82f6;
+  --yellow: #eab308;
+  --orange: #f97316;
+  --red: #ef4444;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg); color: var(--text);
+  min-height: 100vh; padding: 0;
+}
+.app { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+
+h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+.subtitle { color: var(--text2); font-size: 14px; margin-bottom: 32px; }
+
+/* Input section */
+.input-section {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 20px; margin-bottom: 16px;
+}
+.input-section label { font-size: 13px; color: var(--text2); display: block; margin-bottom: 8px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+textarea {
+  width: 100%; background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 12px; color: var(--text); font-size: 15px;
+  resize: none; height: 80px; font-family: inherit;
+}
+textarea:focus { outline: none; border-color: var(--accent); }
+textarea::placeholder { color: var(--text2); }
+
+.phase-row { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.phase-btn {
+  padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text2); cursor: pointer;
+  font-size: 13px; transition: all 0.15s;
+}
+.phase-btn:hover { border-color: var(--accent); color: var(--text); }
+.phase-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+.go-btn {
+  width: 100%; margin-top: 16px; padding: 12px; border: none;
+  border-radius: 8px; background: var(--accent); color: white;
+  font-size: 15px; font-weight: 600; cursor: pointer; transition: opacity 0.15s;
+}
+.go-btn:hover { opacity: 0.9; }
+.go-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Result section */
+.result { display: none; margin-top: 16px; }
+.result.visible { display: block; }
+
+.verdict {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 24px; text-align: center;
+  margin-bottom: 16px; position: relative; overflow: hidden;
+}
+.verdict::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px;
+}
+.verdict.ai-decides::before { background: var(--green); }
+.verdict.ai-recommends::before { background: var(--blue); }
+.verdict.ai-informs::before { background: var(--yellow); }
+.verdict.ai-assists::before { background: var(--orange); }
+.verdict.ai-absent::before { background: var(--red); }
+
+.verdict-role { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+.verdict-desc { color: var(--text2); font-size: 14px; }
+
+.detail-cards { display: grid; gap: 12px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px;
+}
+.card-title { font-size: 12px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; font-weight: 600; }
+.card-body { font-size: 14px; line-height: 1.6; }
+
+.scores { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 16px; }
+.score-box {
+  background: var(--surface2); border-radius: 8px; padding: 12px; text-align: center;
+}
+.score-label { font-size: 11px; color: var(--text2); text-transform: uppercase; }
+.score-value { font-size: 24px; font-weight: 700; margin: 4px 0; }
+.score-name { font-size: 11px; color: var(--text2); }
+
+.borderline-warn {
+  background: #2a2000; border: 1px solid #554400; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px; font-size: 13px; color: #eab308;
+}
+
+.action-list { list-style: none; }
+.action-list li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.action-list li:last-child { border-bottom: none; }
+.action-list .step { color: var(--accent); font-weight: 600; margin-right: 8px; }
+
+.readiness { margin-top: 16px; }
+.readiness-bar { height: 6px; background: var(--surface2); border-radius: 3px; margin: 8px 0; overflow: hidden; }
+.readiness-fill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+
+.history { margin-top: 32px; }
+.history-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 0; border-bottom: 1px solid var(--border); cursor: pointer;
+  font-size: 13px;
+}
+.history-item:hover { color: var(--accent); }
+.history-task { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.history-role { color: var(--text2); margin-left: 12px; white-space: nowrap; }
+
+footer { text-align: center; color: var(--text2); font-size: 11px; margin-top: 48px; padding-bottom: 24px; }
+footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="app">
+  <h1>AI Work Advisor</h1>
+  <p class="subtitle">Tells you when to use AI, when to do it yourself, and when to work together.</p>
+
+  <div class="input-section">
+    <label>What are you working on?</label>
+    <textarea id="taskInput" placeholder="e.g., Design a new onboarding flow for mobile users"></textarea>
+
+    <label style="margin-top:16px;">What phase?</label>
+    <div class="phase-row" id="phaseRow">
+      <button class="phase-btn" data-phase="Discovery">Discovery</button>
+      <button class="phase-btn" data-phase="Design">Design</button>
+      <button class="phase-btn active" data-phase="Development">Development</button>
+      <button class="phase-btn" data-phase="Testing">Testing</button>
+      <button class="phase-btn" data-phase="Launch">Launch</button>
+      <button class="phase-btn" data-phase="Growth">Growth</button>
+    </div>
+
+    <button class="go-btn" id="goBtn" onclick="analyze()">How should I work on this?</button>
+  </div>
+
+  <div class="result" id="result"></div>
+
+  <div class="history" id="historySection" style="display:none;">
+    <div class="card">
+      <div class="card-title">Recent</div>
+      <div id="historyList"></div>
+    </div>
+  </div>
+
+  <footer>
+    AI Work Advisor &mdash; based on <a href="https://github.com/jpark/ai4-product">ai4-product</a> research (2026)
+  </footer>
+</div>
+
+<script>
+// ====== AADM v2 Engine ======
+
+const ROLES = {
+  ai_decides:    { label: 'Let AI Handle It',       color: '#22c55e', emoji: '\u2705', desc: 'AI can do this autonomously. You monitor the result.' },
+  ai_recommends: { label: 'AI Recommends, You Decide', color: '#3b82f6', emoji: '\ud83d\udcca', desc: 'AI gives you a scored recommendation. You approve or override.' },
+  ai_informs:    { label: 'Get AI Analysis First',   color: '#eab308', emoji: '\ud83d\udca1', desc: 'AI provides data and analysis. You synthesize and decide.' },
+  ai_assists:    { label: 'Create Together with AI',  color: '#f97316', emoji: '\ud83c\udfa8', desc: 'AI generates variations. You direct and curate.' },
+  ai_absent:     { label: 'Do This Yourself',         color: '#ef4444', emoji: '\ud83e\udde0', desc: 'This needs your judgment. AI won\'t help here.' },
+};
+
+function scoreToRole(d, r, s, c) {
+  if (d <= 2 && r <= 2 && c <= 2) return { role: 'ai_absent', conf: 0.9 };
+  if (d <= 2 && s <= 2 && c <= 2) return { role: 'ai_absent', conf: 0.8 };
+  if (c >= 4) return { role: 'ai_assists', conf: 0.85 };
+  if (c >= 3 && s <= 2) return { role: 'ai_assists', conf: 0.75 };
+  if (d >= 4 && r >= 4 && s >= 4 && c <= 2) return { role: 'ai_decides', conf: 0.9 };
+  if (d >= 4 && r >= 4 && s >= 4) return { role: 'ai_decides', conf: 0.8 };
+  if (d >= 4 && s >= 4) return { role: 'ai_recommends', conf: 0.85 };
+  if (d >= 4 && s >= 3) return { role: 'ai_recommends', conf: 0.75 };
+  if (c >= 3) return { role: 'ai_assists', conf: 0.65 };
+  if (d <= 2 && r <= 2) return { role: 'ai_absent', conf: 0.7 };
+  if (d >= 3 && s >= 2) return { role: 'ai_informs', conf: 0.7 };
+  return { role: 'ai_informs', conf: 0.5 };
+}
+
+// ====== Task Classifier (keyword-based + phase heuristics) ======
+
+const KW = {
+  execution: ['implement','code','build','write tests','deploy','migrate','refactor','fix bug','set up','configure','automate','script','documentation','generate report','pipeline','endpoint','monitor','install'],
+  creation: ['design','prototype','wireframe','brand','visual','layout','copy','content','creative','look and feel','color','typography','logo','motion','animation','ideate','illustration','ux','ui','onboarding flow','user journey','storyboard'],
+  data_rich: ['analyze','a/b test','metrics','dashboard','segment','funnel','conversion','retention','cohort','experiment','personalize','recommend','prioritize','rank','nps','churn','analytics'],
+  uncertain: ['strategy','roadmap','go/no-go','pivot','launch timing','market entry','positioning','pricing','vision','bet','investment','kill','sunset','partner','acquire','next quarter'],
+  ethical: ['ethics','bias','fairness','privacy','compliance','regulation','stakeholder','legal','trust','safety','governance','responsible','transparency','consent','gdpr'],
+};
+
+const PHASE_DEFAULTS = {
+  Discovery: 'uncertain', Design: 'creation', Development: 'execution',
+  Testing: 'execution', Launch: 'uncertain', Growth: 'data_rich',
+};
+
+function classifyTask(desc, phase) {
+  const low = desc.toLowerCase();
+  const scores = {};
+  for (const [type, kws] of Object.entries(KW)) {
+    scores[type] = kws.filter(kw => low.includes(kw)).length;
+  }
+  let best = Object.entries(scores).sort((a,b) => b[1] - a[1])[0];
+  if (best[1] === 0) best = [PHASE_DEFAULTS[phase] || 'uncertain', 0];
+
+  const typeMap = {
+    execution:  { d:4, r:4, s:5, c:1 },
+    creation:   { d:2, r:3, s:1, c:5 },
+    data_rich:  { d:4, r:3, s:4, c:1 },
+    uncertain:  { d:2, r:2, s:2, c:1 },
+    ethical:    { d:2, r:1, s:1, c:1 },
+  };
+
+  return { type: best[0], scores: typeMap[best[0]] || typeMap.uncertain, keywords: best[1] };
+}
+
+// ====== Borderline Detection ======
+
+function detectBorderline(d, r, s, c) {
+  const base = scoreToRole(d, r, s, c).role;
+  const alts = [];
+  for (const [name, val, fn] of [
+    ['D',d,(v)=>[v,r,s,c]], ['R',r,(v)=>[d,v,s,c]],
+    ['S',s,(v)=>[d,r,v,c]], ['C',c,(v)=>[d,r,s,v]]
+  ]) {
+    for (const delta of [-1, 1]) {
+      const nv = val + delta;
+      if (nv >= 1 && nv <= 5) {
+        const nr = scoreToRole(...fn(nv)).role;
+        if (nr !== base) alts.push({ dim: name, delta, to: nr });
+      }
+    }
+  }
+  return alts;
+}
+
+// ====== Action Generator ======
+
+function getActions(role, type, phase) {
+  const actions = {
+    ai_decides: [
+      'Set up the AI tool and define success criteria',
+      'Let AI execute the task end-to-end',
+      'Review the output before it ships',
+      'Log the result for future learning',
+    ],
+    ai_recommends: [
+      'Gather the relevant data and feed it to AI',
+      'Review AI\'s recommendation and reasoning',
+      'Apply your domain knowledge to approve, modify, or reject',
+      'Document why you agreed or disagreed',
+    ],
+    ai_informs: [
+      'Ask AI to analyze the available data',
+      'Review AI\'s analysis for patterns you might miss',
+      'Combine AI insights with your own context and judgment',
+      'Make the decision yourself, informed by AI',
+    ],
+    ai_assists: [
+      'Brief AI with your creative direction and constraints',
+      'Have AI generate 3-5 variations or options',
+      'Curate and refine the best outputs',
+      'Add your creative judgment for the final version',
+    ],
+    ai_absent: [
+      'This requires your direct judgment — don\'t delegate',
+      'Gather input from stakeholders and your team',
+      'Make the call based on your experience and values',
+      'Document the reasoning for future reference',
+    ],
+  };
+  return actions[role] || actions.ai_informs;
+}
+
+// ====== Readiness Quick Check ======
+
+function getReadinessCheck(role) {
+  const checks = {
+    ai_decides: { q: 'Is your process well-defined enough for AI to follow?', pattern: 'Process Readiness' },
+    ai_recommends: { q: 'Does the AI tool learn from your past approvals/rejections?', pattern: 'Learning Systems' },
+    ai_informs: { q: 'Do you have a clear framework for combining AI data with your judgment?', pattern: 'HITL by Design' },
+    ai_assists: { q: 'Can you clearly articulate the creative direction to guide AI?', pattern: 'Narrow & Deep' },
+    ai_absent: { q: 'Do you have the context and authority to make this call?', pattern: 'Line Manager Ownership' },
+  };
+  return checks[role] || checks.ai_informs;
+}
+
+// ====== UI Logic ======
+
+let selectedPhase = 'Development';
+let history = JSON.parse(localStorage.getItem('advisor_history') || '[]');
+
+document.querySelectorAll('.phase-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.phase-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedPhase = btn.dataset.phase;
+  });
+});
+
+function analyze() {
+  const desc = document.getElementById('taskInput').value.trim();
+  if (!desc) return;
+
+  const classified = classifyTask(desc, selectedPhase);
+  const { d, r, s, c } = classified.scores;
+  const result = scoreToRole(d, r, s, c);
+  const info = ROLES[result.role];
+  const border = detectBorderline(d, r, s, c);
+  const actions = getActions(result.role, classified.type, selectedPhase);
+  const readiness = getReadinessCheck(result.role);
+
+  // Save history
+  history.unshift({ desc: desc.slice(0, 60), phase: selectedPhase, role: result.role, time: new Date().toLocaleTimeString() });
+  if (history.length > 10) history = history.slice(0, 10);
+  localStorage.setItem('advisor_history', JSON.stringify(history));
+
+  // Render
+  const el = document.getElementById('result');
+  el.innerHTML = `
+    <div class="verdict ${result.role.replace('_','-')}">
+      <div class="verdict-role">${info.emoji} ${info.label}</div>
+      <div class="verdict-desc">${info.desc}</div>
+    </div>
+
+    <div class="scores">
+      <div class="score-box"><div class="score-label">Data</div><div class="score-value" style="color:${d>=4?'var(--green)':d<=2?'var(--red)':'var(--yellow)'}">${d}</div><div class="score-name">D</div></div>
+      <div class="score-box"><div class="score-label">Reversibility</div><div class="score-value" style="color:${r>=4?'var(--green)':r<=2?'var(--red)':'var(--yellow)'}">${r}</div><div class="score-name">R</div></div>
+      <div class="score-box"><div class="score-label">Objectivity</div><div class="score-value" style="color:${s>=4?'var(--green)':s<=2?'var(--red)':'var(--yellow)'}">${s}</div><div class="score-name">S</div></div>
+      <div class="score-box"><div class="score-label">Creativity</div><div class="score-value" style="color:${c>=4?'var(--orange)':c<=2?'var(--text2)':'var(--yellow)'}">${c}</div><div class="score-name">C</div></div>
+    </div>
+
+    ${border.length > 0 ? `<div class="borderline-warn">Borderline case. ${border.map(b => `${b.dim}${b.delta>0?'+':''}{b.delta} would change to "${ROLES[b.to].label}"`).join('. ')}.</div>` : ''}
+
+    <div class="detail-cards">
+      <div class="card">
+        <div class="card-title">What to do</div>
+        <ol class="action-list">
+          ${actions.map((a,i) => `<li><span class="step">${i+1}</span>${a}</li>`).join('')}
+        </ol>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Quick readiness check</div>
+        <div class="card-body">
+          <strong>${readiness.q}</strong>
+          <div style="color:var(--text2);margin-top:4px;font-size:12px;">Based on Success Pattern: ${readiness.pattern}</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Why this recommendation</div>
+        <div class="card-body" style="font-size:13px;color:var(--text2);">
+          ${result.role === 'ai_assists' ? 'Nature meta-analysis (106 experiments): creative tasks are the one type where Human+AI consistently outperforms either alone.' :
+            result.role === 'ai_absent' ? 'This decision has low data, high stakes, and no creative element. AI can\'t help with judgment under genuine uncertainty.' :
+            result.role === 'ai_decides' ? 'High data availability, easily reversible, and objectively measurable. AI can handle this faster and more consistently than manual work.' :
+            result.role === 'ai_recommends' ? 'Good data exists but the stakes are significant. Stanford research: AI recommendations work best when humans approve the final call.' :
+            'Moderate data exists but context and judgment matter. AI analysis + your interpretation = better than either alone.'}
+        </div>
+      </div>
+    </div>
+  `;
+  el.classList.add('visible');
+  renderHistory();
+}
+
+function renderHistory() {
+  const section = document.getElementById('historySection');
+  const list = document.getElementById('historyList');
+  if (history.length === 0) { section.style.display = 'none'; return; }
+  section.style.display = 'block';
+  list.innerHTML = history.map(h => `
+    <div class="history-item" onclick="document.getElementById('taskInput').value='${h.desc.replace(/'/g,"\\'")}';analyze();">
+      <span class="history-task">${h.desc}</span>
+      <span class="history-role" style="color:${ROLES[h.role]?.color || '#888'}">${ROLES[h.role]?.label || h.role}</span>
+    </div>
+  `).join('');
+}
+
+// Init
+renderHistory();
+document.getElementById('taskInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); analyze(); }
+});
+</script>
+</body>
+</html>
