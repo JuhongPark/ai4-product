@@ -1,0 +1,7 @@
+{
+  "n_iterations": 1000,
+  "rank_preservation_rate": 0.47,
+  "klarna_not_ready_rate": 0.468,
+  "postnl_highly_ready_rate": 0.898,
+  "pattern_removal_disruptions": {}
+}

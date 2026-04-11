@@ -1,0 +1,44 @@
+{
+  "per_phase": {
+    "Design": {
+      "accuracy": 0.812,
+      "correct": 13,
+      "total": 16
+    },
+    "Development": {
+      "accuracy": 0.833,
+      "correct": 15,
+      "total": 18
+    },
+    "Discovery": {
+      "accuracy": 0.562,
+      "correct": 9,
+      "total": 16
+    },
+    "Growth": {
+      "accuracy": 0.706,
+      "correct": 12,
+      "total": 17
+    },
+    "Launch": {
+      "accuracy": 0.353,
+      "correct": 6,
+      "total": 17
+    },
+    "Testing": {
+      "accuracy": 0.786,
+      "correct": 11,
+      "total": 14
+    }
+  },
+  "keyword_coverage": {
+    "Design": 0.812,
+    "Development": 0.722,
+    "Discovery": 0.5,
+    "Growth": 0.824,
+    "Launch": 0.294,
+    "Testing": 0.214
+  },
+  "avg_cv_accuracy": 0.675,
+  "generalization_gap": -0.002
+}
