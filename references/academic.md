@@ -73,3 +73,7 @@
 44. Vaccaro et al. (2024). "When combinations of humans and AI are useful: A systematic review and meta-analysis." Nature Human Behaviour. https://www.nature.com/articles/s41562-024-02024-1
 45. "Human-AI complementarity needs augmentation, not emulation." Nature Reviews Psychology, 2026. https://www.nature.com/articles/s44159-026-00536-3
 46. IEEE (2024). "Why AI Projects Fail: Lessons From NPD." IEEE Engineering Management Review. https://ieeexplore.ieee.org/document/10572277
+47. Spiess et al. (2025). "Designing Algorithmic Recommendations to Achieve Human-AI Complementarity." Stanford GSB. https://www.gsb.stanford.edu/faculty-research/working-papers/designing-algorithmic-recommendations-achieve-human-ai
+48. "Three Challenges for AI-Assisted Decision-Making." Perspectives on Psychological Science, 2024. https://journals.sagepub.com/doi/full/10.1177/17456916231181102
+49. "Design principles for AI-augmented decision making." EJIS, 2024. https://www.tandfonline.com/doi/full/10.1080/0960085X.2024.2330402
+50. "AI and Strategic Decision-Making: Evidence from Entrepreneurs." Strategy Science, 2024. https://pubsonline.informs.org/doi/10.1287/stsc.2024.0190

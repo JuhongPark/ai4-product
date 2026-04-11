@@ -484,6 +484,49 @@
 
 > **Full analysis**: See [research/cross-cutting/papers/why-humans-remain-essential.md](../research/cross-cutting/papers/why-humans-remain-essential.md)
 
+### 7.8 Selective Complementarity Framework (NEW — Original Analysis)
+
+Maps the Nature meta-analysis (creation vs decision tasks) and Stanford's selective recommendation model onto each product lifecycle phase:
+
+| Phase | Primary Task Type | Optimal Model |
+|-------|------------------|---------------|
+| Discovery | Mixed (empathy + pattern) | Human-led, AI-augmented |
+| Design | Creation | Human+AI collaboration (highest complementarity) |
+| Development | Execution | AI-led, human-reviewed |
+| Testing | Verification | AI-led, human-reviewed |
+| Launch | Decision (strategic) | Human-led, AI-informed |
+| Growth | Mixed (analysis + judgment) | Selective complementarity (Stanford model) |
+
+> **Full framework**: See [research/cross-cutting/papers/selective-complementarity-framework.md](../research/cross-cutting/papers/selective-complementarity-framework.md)
+
+### 7.9 The Successful 5%: Common Patterns (NEW — Original Analysis)
+
+Stanford Playbook (51 cases) + MIT NANDA success analysis reveals 7 patterns:
+
+1. **Organizational readiness > technology readiness** — "The difference was never the AI model"
+2. **Line managers, not central AI labs** — distributed adoption beats centralized mandates
+3. **Buy > Build** (67% vs 33% success rate) — vendor specialization wins
+4. **Back-office first** — highest ROI in document automation, HR, support ($2-10M/year)
+5. **Narrow and deep > broad and shallow** — one phase deeply before expanding
+6. **Systems that learn** — most GenAI systems don't retain feedback or adapt over time
+7. **Human-in-the-loop as feature** — 65% of high performers have defined HITL processes (McKinsey)
+
+> **Full analysis**: See [research/cross-cutting/papers/successful-5-percent-patterns.md](../research/cross-cutting/papers/successful-5-percent-patterns.md)
+
+### 7.10 AI-Augmented Product Decision Framework (NEW — Original Proposal)
+
+Extends Cooper's AI-PRISM to all lifecycle decision points via a three-dimension scoring model (AADM):
+
+- **Data Availability (D)** — how much structured data informs the decision
+- **Reversibility (R)** — how easily the decision can be undone
+- **Subjectivity (S)** — how much subjective judgment is required
+
+AI role determined by score profile: AI Decides (high D/R/S) → AI Recommends → AI Informs → AI Assists → AI Absent (low D/R/S)
+
+Status: **Proposed framework requiring empirical validation.**
+
+> **Full framework**: See [research/04-management/papers/ai-product-decision-framework.md](../research/04-management/papers/ai-product-decision-framework.md)
+
 ---
 
 ## 8. Research Gap Summary & Future Directions
@@ -515,6 +558,9 @@
 5. **LLM-Based Product Intelligence** — Using foundation models for customer insight synthesis, competitive analysis, and product strategy
 6. **Generative UI/UX Systems** — Academic study of dynamically generated interfaces and their impact on user experience
 7. **AI for Product Quality Assurance** — Automated product testing, validation, and quality prediction across the development lifecycle
+8. **Selective Complementarity in Product Teams** — Empirical validation of when to use AI vs humans at each lifecycle phase; extending Nature meta-analysis to product-specific tasks *(NEW)*
+9. **AI-Augmented Decision Framework (AADM) Validation** — Empirical testing of the D/R/S scoring model across product organizations and industries *(NEW — proposed)*
+10. **Success Pattern Replication** — Can the 7 patterns from the successful 5% be codified into a repeatable deployment methodology? *(NEW)*
 
 ---
 
@@ -655,3 +701,7 @@ MIT is a leading hub for AI-for-Product research across multiple labs and depart
 61. "Human-AI complementarity needs augmentation, not emulation." Nature Reviews Psychology, 2026. https://www.nature.com/articles/s44159-026-00536-3
 62. Cognition (2025). "Devin's 2025 Performance Review." https://cognition.ai/blog/devin-annual-performance-review-2025
 63. IEEE (2024). "Why AI Projects Fail: Lessons From NPD." IEEE Eng Mgmt Review. https://ieeexplore.ieee.org/document/10572277
+64. Spiess et al. (2025). "Designing Algorithmic Recommendations to Achieve Human-AI Complementarity." Stanford GSB. https://www.gsb.stanford.edu/faculty-research/working-papers/designing-algorithmic-recommendations-achieve-human-ai
+65. "Three Challenges for AI-Assisted Decision-Making." Perspectives on Psychological Science, 2024. https://journals.sagepub.com/doi/full/10.1177/17456916231181102
+66. "Design principles for AI-augmented decision making." EJIS, 2024. https://www.tandfonline.com/doi/full/10.1080/0960085X.2024.2330402
+67. "AI and Strategic Decision-Making: Evidence from Entrepreneurs." Strategy Science, 2024. https://pubsonline.informs.org/doi/10.1287/stsc.2024.0190
