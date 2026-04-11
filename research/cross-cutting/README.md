@@ -48,6 +48,13 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - Oversight fatigue: HITL breaks down at scale (200th approval ≠ 1st approval)
 - Misaligned incentives: no actor in the system benefits from saying "stop using AI"
 
+## The AI Capability-Utilization Gap (NEW)
+- AI is good; the problem is human cognition and organizational design
+- $250B invested, 1.9% productivity gain, 90% of CEOs report no impact (Solow paradox redux)
+- HBR 2026: AI doesn't reduce work — it intensifies it (task expansion, boundary collapse, multitasking)
+- Only proven debiasing method: cognitive forcing functions (form judgment before seeing AI recommendation)
+- Business implication: "how to make humans better at using AI" > "how to make AI better"
+
 ## Speculative Methods as Research Tools (NEW)
 - Design fiction: HCI 5th wave method — creates diegetic prototypes to study futures before building
 - SF prototyping (Intel/Johnson): fills AADM "AI Absent" zone with structured imagination
