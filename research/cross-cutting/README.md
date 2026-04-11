@@ -20,6 +20,21 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - Generative and agentic AI require adaptive governance with stronger vendor controls, tool permissions, and post-deployment oversight
 - Governance is not just compliance: emerging evidence links mature AI governance to higher adoption, stronger customer trust, and better business outcomes
 
+## AI Governance Priorities 2026 (NEW)
+- Partnership on AI: Six priorities — govern AI agents, documentation, international coordination, human voice, workforce resilience, AI sovereignty
+- Stanford HAI AI Index 2026: 47 countries with AI legislation, only 12 with enforcement; compliance costs vary 8x
+- MIT Sloan: "Old governance playbooks not working for AI"; LLM-ification of data as key 2026 trend
+
+## End-to-End AI Product Lifecycle Frameworks (NEW)
+- EY.ai PDLC (2026): Multi-agent mesh across full lifecycle — 80x acceleration
+- McKinsey, AWS, Microsoft: Competing end-to-end frameworks all emphasizing multi-agent orchestration
+- Key finding: All 2026 frameworks emphasize human-in-the-loop oversight
+
+## AI Product Team Transformation (NEW)
+- CMR (2026): Hybrid teams (humans + AI) outperform all alternatives; only 10-15% achieve measurable AI impact
+- PM role evolution: Feature Builder → AI-Assisted PM → AI Orchestrator → Ecosystem Architect
+- Essential skills: AI literacy, data fluency, systems thinking, ethical leadership
+
 ## AI Frameworks & Taxonomies
 - OECD Sectoral Taxonomy of AI Intensity (2024) — complementarity measure for AI exposure and productivity
 - AI Agents vs. Agentic AI — structured conceptual taxonomy distinguishing the two

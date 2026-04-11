@@ -23,6 +23,7 @@ MIT conducts leading research on AI applications across the product lifecycle th
 - [Comprehensive Survey of MIT AI for Product Research by Institution](papers/mit-ai-product-research.md)
 - [MIT Key Researcher Profiles](papers/mit-researchers.md)
 - [MIT SDM Research Deep-Dive](papers/mit-sdm-research.md) — 20+ SDM theses, faculty research, events & programs
+- [MIT Sloan: AI and Work in 2026](papers/mit-sloan-ai-work-2026.md) — Faculty predictions, CSAIL EnCompass, Sloan Fellows (NEW)
 
 ## Area Mapping to ai4-product
 

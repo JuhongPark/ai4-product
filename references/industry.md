@@ -59,3 +59,27 @@
 42. JPMorgan Chase. "LLM Suite Named Innovation of the Year." https://www.jpmorganchase.com/about/technology/news/llmsuite-ab-award
 43. Stripe. "Sessions 2025: AI and Stablecoins." https://stripe.com/newsroom/news/sessions-2025
 44. Netflix PRS Workshop 2025. https://www.shaped.ai/blog/key-insights-from-the-netflix-personalization-search-recommendation-workshop-2025
+
+## NEW (April 2026 Update)
+
+### Discovery & User Research
+45. Korst, Puntoni & Toubia (2026). "How AI Helps Scale Qualitative Customer Research." HBR. https://hbr.org/2026/04/how-ai-helps-scale-qualitative-customer-research
+
+### Governance & Policy
+46. Partnership on AI (2026). "Six AI Governance Priorities for 2026." https://partnershiponai.org/resource/six-ai-governance-priorities/
+47. Stanford HAI (2026). "AI Index Report 2026." https://hai.stanford.edu/ai-index-report
+
+### Enterprise AI & Industry Analysis
+48. Gartner (2026). "Strategic Predictions for 2026." https://www.gartner.com/en/articles/strategic-predictions-for-2026
+49. Gartner (2026). "60% of Brands Will Use Agentic AI for 1:1 Interactions by 2028." https://www.gartner.com/en/newsroom/press-releases/2026-01-15-gartner-predicts-60-percent-of-brands-will-use-agentic-ai-to-deliver-streamlined-one-to-one-interactions-by-2028
+50. Gartner (2026). "Manufacturing Predicts 2026: Digital Twins, AI Agents, Autonomous Operations." https://www.gartner.com/en/webinar/797437/1795012-manufacturing-predicts-2026-digital-twins-ai-agents-and-the-race-to-autonomous-operations
+
+### MIT Research
+51. MIT Sloan (2026). "Looking Ahead at AI and Work in 2026." https://mitsloan.mit.edu/ideas-made-to-matter/looking-ahead-ai-and-work-2026
+52. MIT CSAIL (2026). "EnCompass: Helping AI Agents Search." https://news.mit.edu/2026/helping-ai-agents-search-to-get-best-results-from-llms-0205
+
+### End-to-End Frameworks
+53. EY (2026). "EY.ai PDLC." https://www.ey.com/en_us/newsroom/2026/03/ernst-young-llp-and-8090-launch-ey-ai-pdlc
+54. McKinsey. "AI-Enabled Software PDLC." https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/how-an-ai-enabled-software-product-development-life-cycle-will-fuel-innovation
+55. AWS. "AI-Driven Development Life Cycle." https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/
+56. Products That Count. "2026 AI Product Lifecycle Playbook." https://productsthatcount.com/the-2026-ai-product-lifecycle-playbook-for-high-velocity-teams/

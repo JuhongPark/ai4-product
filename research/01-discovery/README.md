@@ -10,12 +10,15 @@ Application of AI across product discovery and user research — from automated 
 - **LLM for Customer Insights** — LLM-based market research, consumer segmentation, review analysis, automated insight generation
 - **Synthetic User Research** — AI persona interviews, synthetic research methodology
 - **AI for Product Discovery** — Scientific and commercial product discovery via GenAI
+- **AI-Powered Qualitative Research at Scale** — LLM moderators combining depth and scale (NEW, April 2026)
 
 ## Key Stats
 
 - 80% of UX researchers now use AI (2025, +24pt YoY)
 - AI-assisted researchers discover 44% more materials -> 39% more patents -> 17% more product innovation
 - 58% of Gen Z shoppers already use AI when shopping
+- Anthropic: 80,000+ AI interviews across 159 countries in 70 languages (HBR, April 2026)
+- Synthetic participant parity scores: 85-92% vs. organic participants (2026)
 
 ## Research Gaps
 

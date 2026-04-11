@@ -12,6 +12,7 @@
 | 5 | [Growth & Lifecycle](research/05-growth-lifecycle/) | PLM, digital twins, personalization, A/B test automation |
 | 6 | [Cross-Cutting Themes](research/cross-cutting/) | Human-AI collaboration, responsible AI, AI governance, frameworks & taxonomies |
 | 7 | [Industry Trends](research/industry-trends/) | Tech companies, AI startups/tools, consulting reports, industry applications |
+| 8 | [MIT Research](research/mit-research/) | MIT labs, researchers, SDM, Sloan predictions |
 
 ## Project Structure
 
@@ -37,7 +38,7 @@ ai4-product/
 
 ## Scope
 
-- **Time range:** 2022–2026
+- **Time range:** 2022–2026 (last updated: 2026-04-11)
 - **Sources:** Academic papers, practitioner research, and industry reports
 - **Disciplines:** HCI, software engineering, management science, machine learning
 
