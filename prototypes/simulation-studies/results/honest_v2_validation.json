@@ -1,0 +1,49 @@
+{
+  "v1_baseline": 0.827,
+  "random_c_baseline": 0.529,
+  "noise_levels": {
+    "0.0": {
+      "mean": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0
+    },
+    "0.1": {
+      "mean": 0.991,
+      "ci_low": 0.969,
+      "ci_high": 1.0
+    },
+    "0.2": {
+      "mean": 0.982,
+      "ci_low": 0.959,
+      "ci_high": 1.0
+    },
+    "0.3": {
+      "mean": 0.974,
+      "ci_low": 0.949,
+      "ci_high": 1.0
+    },
+    "0.4": {
+      "mean": 0.965,
+      "ci_low": 0.929,
+      "ci_high": 0.99
+    },
+    "0.5": {
+      "mean": 0.956,
+      "ci_low": 0.918,
+      "ci_high": 0.98
+    },
+    "0.7": {
+      "mean": 0.939,
+      "ci_low": 0.898,
+      "ci_high": 0.98
+    },
+    "1.0": {
+      "mean": 0.913,
+      "ci_low": 0.867,
+      "ci_high": 0.959
+    }
+  },
+  "honest_improvement_30_noise": 0.147,
+  "honest_improvement_50_noise": 0.129,
+  "random_c_degrades": false
+}
