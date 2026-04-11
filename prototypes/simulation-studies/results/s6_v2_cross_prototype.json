@@ -1,0 +1,100 @@
+{
+  "v1_consistency": 0.827,
+  "v2_consistency": 1.0,
+  "improvement": 0.173,
+  "fixes": 17,
+  "regressions": 0,
+  "fix_samples": [
+    {
+      "desc": "Design a new onboarding flow for mobile users",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Create 5 visual design variations for the landing page",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Define the brand voice guidelines for AI-generated content",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Prototype an adaptive UI that changes based on user behavior",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Write microcopy for error states across the app",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Design accessibility improvements for screen readers",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Create motion design specifications for page transitions",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Decide color palette for dark mode",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Write the launch announcement blog post",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    },
+    {
+      "desc": "Design an AI-powered customer support chatbot",
+      "v1": "ai_absent",
+      "v2": "ai_assists",
+      "expected": [
+        "ai_assists",
+        "ai_informs"
+      ]
+    }
+  ],
+  "regression_samples": []
+}

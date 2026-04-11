@@ -70,30 +70,41 @@ Based on the Nature meta-analysis, Stanford selective complementarity research, 
 - 3 = Mixed (some data, some judgment)
 - 5 = Highly objective (pass/fail test, threshold metric)
 
-### AI Role = f(D, R, S)
+### AI Role = f(D, R, S, C) — AADM v2
+
+**v2 Update**: Added Creativity (C) as 4th dimension based on simulation Study S6 findings. v1 misclassified all 17 creative tasks as "AI Absent" because low D + low S triggered the absence rule. The Nature meta-analysis (106 experiments) shows creation is the one task type where Human+AI > either alone. C resolves this.
+
+**4. C (Creativity)** — How much does the task benefit from generative variation?
+- 1 = No creative element (pure analysis or judgment)
+- 3 = Some creative input helpful (mixed tasks)
+- 5 = Primarily creative (design, ideation, content)
 
 | Score Profile | AI Role | Example |
 |--------------|---------|---------|
-| High D, High R, High S | **AI Decides** (autonomous) | Automated A/B test routing |
-| High D, Low R, High S | **AI Recommends** (human approves) | AI-PRISM gate scoring |
-| Medium D, Medium R, Medium S | **AI Informs** (human decides with data) | Feature prioritization |
-| Low D, Low R, Low S | **AI Absent** (human leads) | Strategic vision, ethical calls |
-| Any D, Any R, Low S | **AI Assists** (generates options) | Design variations, copy alternatives |
+| High D, High R, High S, Low C | **AI Decides** (autonomous) | Automated A/B test routing |
+| High D, High S | **AI Recommends** (human approves) | AI-PRISM gate scoring |
+| Medium D, Medium S, Low C | **AI Informs** (human decides with data) | Feature prioritization |
+| **High C** (any D/S) | **AI Assists** (creative collaboration) | Design variations, copy alternatives |
+| Low D, Low R, Low C | **AI Absent** (human leads) | Strategic vision, ethical calls |
+
+**Simulation Validation**:
+- v1 P1-P2 consistency: 82.7% → v2: **100%** (17 fixes, 0 regressions)
+- Boundary sensitivity: 74% → **59%** (improved)
 
 ### Applied to Product Lifecycle
 
-| Decision Point | D | R | S | AI Role |
-|---------------|---|---|---|---------|
-| Which problem to pursue? | 2 | 1 | 1 | AI Absent → Human leads with market data |
-| Customer segmentation? | 4 | 4 | 4 | AI Recommends → LLM clustering + human validation |
-| Design direction? | 2 | 3 | 1 | AI Assists → Generates variations, human curates |
-| Build vs buy? | 3 | 2 | 3 | AI Informs → Cost models, human decides strategy |
-| Go / Kill / Pivot? | 3 | 1 | 3 | AI Recommends → AI-PRISM score + human judgment |
-| Ship or fix? | 5 | 4 | 5 | AI Decides → Automated quality gates |
-| When to launch? | 3 | 2 | 2 | AI Informs → Market signals, human decides timing |
-| Pricing? | 4 | 3 | 3 | AI Recommends → Price optimization + human approval |
-| Double down or sunset? | 4 | 1 | 2 | AI Informs → Usage data + strategic human judgment |
-| What to build next? | 3 | 2 | 2 | AI Informs → Prioritization data, human decides vision |
+| Decision Point | D | R | S | C | AI Role |
+|---------------|---|---|---|---|---------|
+| Which problem to pursue? | 2 | 1 | 1 | 1 | AI Absent → Human leads with market data |
+| Customer segmentation? | 4 | 4 | 4 | 1 | AI Recommends → LLM clustering + human validation |
+| Design direction? | 2 | 3 | 1 | **5** | AI Assists → Generates variations, human curates |
+| Build vs buy? | 3 | 2 | 3 | 1 | AI Informs → Cost models, human decides strategy |
+| Go / Kill / Pivot? | 3 | 1 | 3 | 1 | AI Recommends → AI-PRISM score + human judgment |
+| Ship or fix? | 5 | 4 | 5 | 1 | AI Decides → Automated quality gates |
+| When to launch? | 3 | 2 | 2 | 1 | AI Absent → Market signals, human decides timing |
+| Pricing? | 4 | 3 | 3 | 1 | AI Recommends → Price optimization + human approval |
+| Double down or sunset? | 4 | 1 | 2 | 1 | AI Informs → Usage data + strategic human judgment |
+| Marketing copy? | 3 | 4 | 2 | **4** | AI Assists → AI generates, human curates tone/brand |
 
 ---
 
