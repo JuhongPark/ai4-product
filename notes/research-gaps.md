@@ -4,7 +4,7 @@
 
 | # | Gap Area | Severity |
 |---|---------|----------|
-| 1 | **End-to-End AI Integration** — No integrative AI framework spanning all product lifecycle phases — *partially addressed*: EY.ai PDLC, McKinsey PDLC, Vallé et al. 2026 | High |
+| 1 | **End-to-End AI Integration** — Frameworks exist (EY.ai PDLC, McKinsey) but **no production-verified full automation**; Klarna reversal shows full replacement fails; structural barriers (MIT: 95% pilots fail) | High |
 | 2 | **NPD Later Stages** — AI in concept testing, product validation, and post-launch optimization — *partially addressed*: AI QA research, EY.ai PDLC | High |
 | 3 | **Agentic AI for PM** — Limited academic research — *partially addressed*: Parikh co-evolutionary model (2025) | High |
 | 4 | **Human-AI Complementarity** — Rarely achieved empirically; insufficient understanding of when/how it works | Medium |

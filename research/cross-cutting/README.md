@@ -29,6 +29,7 @@ Themes spanning the entire product lifecycle: Human-AI collaboration, responsibl
 - EY.ai PDLC (2026): Multi-agent mesh across full lifecycle — 80x acceleration
 - McKinsey, AWS, Microsoft: Competing end-to-end frameworks all emphasizing multi-agent orchestration
 - Key finding: All 2026 frameworks emphasize human-in-the-loop oversight
+- **Reality check**: No verified full automation exists; all successes are partial-phase; Klarna reversal is cautionary case
 
 ## AI Product Team Transformation (NEW)
 - CMR (2026): Hybrid teams (humans + AI) outperform all alternatives; only 10-15% achieve measurable AI impact
