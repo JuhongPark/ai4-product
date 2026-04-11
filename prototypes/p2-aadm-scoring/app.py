@@ -55,37 +55,32 @@ AI_ROLES = {
 def score_to_role(d: int, r: int, s: int) -> dict:
     """Map D/R/S scores (1-5 each) to an AI role."""
 
-    # High data + high reversibility + high objectivity → AI Decides
+    # AI Absent: low data + irreversible decisions (strategic/ethical judgment)
+    # Must check first — these are the decisions humans must own
+    if d <= 2 and r <= 2:
+        return {"role": "ai_absent", "confidence": 0.85}
+
+    if d <= 2 and s <= 2:
+        return {"role": "ai_absent", "confidence": 0.75}
+
+    # AI Decides: high data + reversible + objective
     if d >= 4 and r >= 4 and s >= 4:
         return {"role": "ai_decides", "confidence": 0.9}
 
-    # High data + low reversibility + high objectivity → AI Recommends
+    # AI Recommends: high data + objective (any reversibility)
     if d >= 4 and s >= 4:
         return {"role": "ai_recommends", "confidence": 0.85}
 
-    # High data + any reversibility + medium objectivity → AI Recommends
     if d >= 4 and s >= 3:
         return {"role": "ai_recommends", "confidence": 0.75}
 
-    # Medium data + medium all → AI Informs
-    if d >= 3 and s >= 2:
-        return {"role": "ai_informs", "confidence": 0.7}
-
-    # Low subjectivity (creative) + any data → AI Assists
-    if s <= 2 and d >= 2:
+    # AI Assists: subjective/creative tasks (low S) with some data
+    if s <= 2:
         return {"role": "ai_assists", "confidence": 0.7}
 
-    # Low subjectivity + low data → AI Assists (generate options)
-    if s <= 2:
-        return {"role": "ai_assists", "confidence": 0.6}
-
-    # Low data + low reversibility + low objectivity → AI Absent
-    if d <= 2 and r <= 2 and s <= 2:
-        return {"role": "ai_absent", "confidence": 0.85}
-
-    # Low data + low reversibility → AI Absent
-    if d <= 2 and r <= 2:
-        return {"role": "ai_absent", "confidence": 0.7}
+    # AI Informs: medium data + medium objectivity
+    if d >= 3 and s >= 2:
+        return {"role": "ai_informs", "confidence": 0.7}
 
     # Default: AI Informs
     return {"role": "ai_informs", "confidence": 0.5}
