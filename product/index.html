@@ -149,6 +149,20 @@ footer a { color: var(--accent); text-decoration: none; }
     <button class="go-btn" id="goBtn" onclick="analyze()">How should I work on this?</button>
   </div>
 
+  <details class="input-section" style="margin-top:-8px;cursor:pointer;">
+    <summary style="font-size:13px;color:var(--text2);list-style:none;">
+      <span style="margin-right:4px;">&#9881;</span> Settings
+    </summary>
+    <div style="margin-top:12px;">
+      <label>Anthropic API Key <span style="font-weight:400;text-transform:none;">(optional &mdash; enables LLM classification)</span></label>
+      <input type="password" id="apiKeyInput" placeholder="sk-ant-..." style="
+        width:100%;background:var(--surface2);border:1px solid var(--border);
+        border-radius:8px;padding:10px;color:var(--text);font-size:14px;font-family:monospace;
+      ">
+      <div id="apiStatus" style="margin-top:6px;font-size:12px;color:var(--text2);"></div>
+    </div>
+  </details>
+
   <div class="result" id="result"></div>
 
   <div class="history" id="historySection" style="display:none;">
@@ -189,8 +203,9 @@ function scoreToRole(d, r, s, c) {
   return { role: 'ai_informs', conf: 0.5 };
 }
 
-// ====== Task Classifier (keyword-based + phase heuristics) ======
+// ====== Task Classifier ======
 
+// --- Keyword fallback ---
 const KW = {
   execution: ['implement','code','build','write tests','deploy','migrate','refactor','fix bug','set up','configure','automate','script','documentation','generate report','pipeline','endpoint','monitor','install'],
   creation: ['design','prototype','wireframe','brand','visual','layout','copy','content','creative','look and feel','color','typography','logo','motion','animation','ideate','illustration','ux','ui','onboarding flow','user journey','storyboard'],
@@ -204,7 +219,7 @@ const PHASE_DEFAULTS = {
   Testing: 'execution', Launch: 'uncertain', Growth: 'data_rich',
 };
 
-function classifyTask(desc, phase) {
+function classifyTaskKeywords(desc, phase) {
   const low = desc.toLowerCase();
   const scores = {};
   for (const [type, kws] of Object.entries(KW)) {
@@ -221,7 +236,86 @@ function classifyTask(desc, phase) {
     ethical:    { d:2, r:1, s:1, c:1 },
   };
 
-  return { type: best[0], scores: typeMap[best[0]] || typeMap.uncertain, keywords: best[1] };
+  return { type: best[0], scores: typeMap[best[0]] || typeMap.uncertain, keywords: best[1], method: 'keywords' };
+}
+
+// --- LLM classifier ---
+async function classifyTaskLLM(desc, phase) {
+  const apiKey = document.getElementById('apiKeyInput').value.trim();
+  if (!apiKey) return null;
+
+  const prompt = `You are an AI Work Advisor that classifies product tasks.
+
+Score this task on four dimensions (1-5 each):
+- D (Data Availability): 1=pure intuition, no data → 5=rich metrics, extensive historical data
+- R (Reversibility): 1=irreversible, bet-the-company → 5=trivially reversible, feature flag
+- S (Objectivity): 1=purely subjective/aesthetic → 5=objectively measurable pass/fail
+- C (Creativity): 1=no creative element, routine/analytical → 5=primarily creative, generative
+
+Task: "${desc}"
+Product phase: ${phase}
+
+Think about what kind of work this actually involves. Consider:
+- Does the person need data to do this, or is it about judgment/intuition? (D)
+- If this goes wrong, how hard is it to undo? (R)
+- Can you objectively measure if this was done well, or is it a matter of taste? (S)
+- Would generating multiple variations or creative options help? (C)
+
+Respond with ONLY valid JSON, no other text:
+{"D":X,"R":X,"S":X,"C":X,"reasoning":"one sentence why"}`;
+
+  try {
+    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 150,
+        messages: [{ role: 'user', content: prompt }],
+      }),
+    });
+
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      console.warn('LLM API error:', resp.status, err);
+      document.getElementById('apiStatus').textContent = `API error: ${resp.status}`;
+      document.getElementById('apiStatus').style.color = 'var(--red)';
+      return null;
+    }
+
+    const data = await resp.json();
+    const text = data.content[0].text.trim();
+    const parsed = JSON.parse(text);
+
+    const clamp = v => Math.max(1, Math.min(5, Math.round(v)));
+    const result = {
+      scores: { d: clamp(parsed.D), r: clamp(parsed.R), s: clamp(parsed.S), c: clamp(parsed.C) },
+      reasoning: parsed.reasoning || '',
+      method: 'llm',
+    };
+
+    document.getElementById('apiStatus').textContent = 'LLM classification active';
+    document.getElementById('apiStatus').style.color = 'var(--green)';
+    return result;
+
+  } catch (e) {
+    console.warn('LLM call failed:', e);
+    document.getElementById('apiStatus').textContent = 'LLM failed, using keywords';
+    document.getElementById('apiStatus').style.color = 'var(--orange)';
+    return null;
+  }
+}
+
+async function classifyTask(desc, phase) {
+  // Try LLM first, fall back to keywords
+  const llmResult = await classifyTaskLLM(desc, phase);
+  if (llmResult) return llmResult;
+  return classifyTaskKeywords(desc, phase);
 }
 
 // ====== Borderline Detection ======
@@ -308,17 +402,27 @@ document.querySelectorAll('.phase-btn').forEach(btn => {
   });
 });
 
-function analyze() {
+async function analyze() {
   const desc = document.getElementById('taskInput').value.trim();
   if (!desc) return;
 
-  const classified = classifyTask(desc, selectedPhase);
+  const btn = document.getElementById('goBtn');
+  btn.disabled = true;
+  btn.textContent = 'Analyzing...';
+
+  const classified = await classifyTask(desc, selectedPhase);
   const { d, r, s, c } = classified.scores;
   const result = scoreToRole(d, r, s, c);
   const info = ROLES[result.role];
   const border = detectBorderline(d, r, s, c);
   const actions = getActions(result.role, classified.type, selectedPhase);
   const readiness = getReadinessCheck(result.role);
+  const methodBadge = classified.method === 'llm'
+    ? '<span style="background:#1a3a1a;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px;">LLM</span>'
+    : '<span style="background:#1a1a2a;color:#8888a0;padding:2px 8px;border-radius:4px;font-size:11px;">Keywords</span>';
+
+  btn.disabled = false;
+  btn.textContent = 'How should I work on this?';
 
   // Save history
   history.unshift({ desc: desc.slice(0, 60), phase: selectedPhase, role: result.role, time: new Date().toLocaleTimeString() });
@@ -333,6 +437,11 @@ function analyze() {
       <div class="verdict-desc">${info.desc}</div>
     </div>
 
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+      <div style="font-size:12px;color:var(--text2);">Classification ${methodBadge}</div>
+      <div style="font-size:12px;color:var(--text2);">Confidence: ${Math.round(result.conf*100)}%</div>
+    </div>
+
     <div class="scores">
       <div class="score-box"><div class="score-label">Data</div><div class="score-value" style="color:${d>=4?'var(--green)':d<=2?'var(--red)':'var(--yellow)'}">${d}</div><div class="score-name">D</div></div>
       <div class="score-box"><div class="score-label">Reversibility</div><div class="score-value" style="color:${r>=4?'var(--green)':r<=2?'var(--red)':'var(--yellow)'}">${r}</div><div class="score-name">R</div></div>
@@ -340,7 +449,9 @@ function analyze() {
       <div class="score-box"><div class="score-label">Creativity</div><div class="score-value" style="color:${c>=4?'var(--orange)':c<=2?'var(--text2)':'var(--yellow)'}">${c}</div><div class="score-name">C</div></div>
     </div>
 
-    ${border.length > 0 ? `<div class="borderline-warn">Borderline case. ${border.map(b => `${b.dim}${b.delta>0?'+':''}{b.delta} would change to "${ROLES[b.to].label}"`).join('. ')}.</div>` : ''}
+    ${border.length > 0 ? `<div class="borderline-warn">Borderline case. A small change in scoring would shift the recommendation. Consider both options.</div>` : ''}
+
+    ${classified.reasoning ? `<div class="card" style="margin-bottom:12px;"><div class="card-title">AI Reasoning</div><div class="card-body" style="font-size:13px;">${classified.reasoning}</div></div>` : ''}
 
     <div class="detail-cards">
       <div class="card">
@@ -389,6 +500,27 @@ function renderHistory() {
 
 // Init
 renderHistory();
+
+// API key persistence
+const savedKey = localStorage.getItem('advisor_api_key') || '';
+document.getElementById('apiKeyInput').value = savedKey;
+if (savedKey) {
+  document.getElementById('apiStatus').textContent = 'API key loaded. LLM classification will be used.';
+  document.getElementById('apiStatus').style.color = 'var(--green)';
+}
+document.getElementById('apiKeyInput').addEventListener('change', e => {
+  const key = e.target.value.trim();
+  if (key) {
+    localStorage.setItem('advisor_api_key', key);
+    document.getElementById('apiStatus').textContent = 'API key saved. LLM classification will be used.';
+    document.getElementById('apiStatus').style.color = 'var(--green)';
+  } else {
+    localStorage.removeItem('advisor_api_key');
+    document.getElementById('apiStatus').textContent = 'No API key. Using keyword classification.';
+    document.getElementById('apiStatus').style.color = 'var(--text2)';
+  }
+});
+
 document.getElementById('taskInput').addEventListener('keydown', e => {
   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); analyze(); }
 });
