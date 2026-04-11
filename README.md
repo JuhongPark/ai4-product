@@ -31,7 +31,8 @@ ai4-product/
 ├── references/                # Reference lists
 │   ├── academic.md            # Academic papers
 │   ├── industry.md            # Industry & practitioner reports
-│   └── venues.md              # Key conferences, journals, institutions
+│   ├── venues.md              # Key conferences, journals, institutions
+│   └── reading-list.md        # Recommended books (research + fiction)
 └── notes/                     # Working notes
     └── research-gaps.md       # Research gaps & future directions
 ```
