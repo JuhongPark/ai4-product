@@ -500,35 +500,49 @@ MIT is a leading hub for AI-for-Product research across multiple labs and depart
 
 ## 10. Key Venues & Resources
 
-### Academic Conferences
-- **CHI** (ACM Conference on Human Factors in Computing Systems) — HCI, UX, human-AI interaction
-- **CSCW** (Computer-Supported Cooperative Work) — Collaboration, teamwork, AI augmentation
-- **NeurIPS / ICML / AAAI** (Applied tracks) — ML methods for product applications
-- **ICSSP / ICSE** — Software process, AI in software engineering
+### Academic Journals (by relevance)
 
-### Academic Journals
-- Journal of Product Innovation Management
-- Management Review Quarterly (Springer)
-- European Journal of Information Systems
-- Journal of Consumer Research (Oxford)
-- Computers & Industrial Engineering (ScienceDirect)
-- AI and Ethics (Springer)
-- International Journal of Advanced Manufacturing Technology (Springer)
+**Product & Innovation:**
+- **Technovation** (Elsevier, IF 14.6) — NPD, AI in product development *(NEW: Vallé et al. 2026 SLR)*
+- **Journal of Product Innovation Management** (Wiley, IF 10.7) — NPD, product strategy
+- **Research-Technology Management** (Taylor & Francis, IF 4.2) — Front-end innovation *(NEW: AI in FFE)*
+- **California Management Review** (SAGE/Berkeley, IF 7.3) — AI and innovation *(NEW: AI product teams)*
+
+**Management & IS:**
+- **Management Review Quarterly** (Springer, IF 9.8) — Systematic reviews, digital twins *(NEW)*
+- **European Journal of Information Systems** — Human-AI collaboration
+- **Business Horizons** (Elsevier, IF 9.0) — GenAI as NPD teammate
+
+**HCI & Consumer:**
+- **Journal of Consumer Research** (Oxford) — GenAI consumer research
+- **Computers & Industrial Engineering** (Elsevier) — Human-AI in NPD
+
+**AI Ethics & Governance:**
+- **AI and Ethics** (Springer) — Ethics by design, bias mitigation
+
+**Software Engineering:**
+- **Automated Software Engineering** (Springer, IF 2.7) — AI-powered QA *(NEW)*
+
+### Academic Conferences
+
+**Core AI:** AAAI (Jan 2026, Singapore) · NeurIPS · ICML · ICLR (Apr 2026, Rio) · NAACL
+**HCI/Design:** CHI · CSCW
+**Software Engineering:** ICSE · ASE · XP (Apr 2026, São Paulo)
+**Product Lifecycle:** PLM/IFIP WG 5.1 (2026, Lecce, Italy) · PLM Road Map (May 2026)
+**AI Governance:** AIGOV @ AAAI (Jan 2026, Singapore) · IAPP AI Governance Global · AI Gov World (Oct 2026, Las Vegas)
+**Product Management (Industry):** AI Product Summit (Apr 2026, San Jose) · ProductWorld (Feb 2027, Santa Clara) · Product-Led Summit (Dec 2026, London)
 
 ### Practitioner Research
-- MIT Sloan Management Review
-- Harvard Business Review
-- McKinsey (QuantumBlack / State of AI)
-- Deloitte Insights
-- BCG Publications
-- Nielsen Norman Group (NN/g)
-- Stanford HAI (AI Index Report)
+- MIT Sloan Management Review · Harvard Business Review · McKinsey · Deloitte · BCG · Bain
+- Nielsen Norman Group (NN/g) · Stanford HAI · Partnership on AI *(NEW)*
+- Reforge · Egon Zehnder *(NEW)*
 
-### Industry Reports
-- Gartner (AI Predictions, Magic Quadrant)
-- IDC FutureScape
-- OECD AI Policy Observatory
-- Siemens PLM Reports
+### Industry Reports & Platforms
+- Gartner (AI Predictions, Strategic Predictions) · IDC FutureScape · Forrester
+- OECD AI Policy Observatory · Siemens PLM Reports
+- EY (EY.ai PDLC) · AWS · Microsoft *(NEW)*
+
+> **Full venue list with impact factors, scopes, and submission guidance:** See [references/venues.md](../references/venues.md)
 
 ---
 
