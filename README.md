@@ -29,6 +29,11 @@ ai4-product/
 │   ├── 05-growth-lifecycle/   # Growth & Lifecycle
 │   ├── cross-cutting/         # Cross-cutting themes
 │   └── industry-trends/      # Company research & industry trends
+├── prototypes/                # Working prototypes
+│   ├── p1-complementarity-dashboard/  # Selective Complementarity task classifier
+│   ├── p2-aadm-scoring/              # AADM decision scoring tool
+│   ├── p3-design-fiction-kit/         # Workshop protocol & materials
+│   └── p4-success-checklist/          # AI adoption readiness diagnostic
 ├── references/                # Reference lists
 │   ├── academic.md            # Academic papers
 │   ├── industry.md            # Industry & practitioner reports
