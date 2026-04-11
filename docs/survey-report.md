@@ -323,6 +323,11 @@
 | Netflix | AI for user experience and content recommendation | Improved engagement |
 | PepsiCo | AI for product shape and flavor optimization (Cheetos) | Precise product characteristic control |
 | Grammarly | GenAI writing intelligence platform | 30M DAU, $400M ARR |
+| PepsiCo + Siemens + NVIDIA | Digital twin for plant/supply chain (design→simulation→validation→manufacturing) | 90% issue pre-detection, 20% throughput increase, 10-15% CAPEX reduction *(NEW)* |
+| EPAM + PostNL | Agentic SDLC (1,000+ systems, 20+ agent types) | 80% test time savings, 70-90% documentation automation *(NEW)* |
+| Salesforce + OpenTable | Agentforce for customer service | 73% autonomous resolution, 40% resolution rate improvement *(NEW)* |
+| Salesforce + 1-800-Accountant | Agentforce for tax season support | 90% case deflection, 40% client growth without new hires *(NEW)* |
+| Klarna | Full AI customer service replacement → **reversal** | Initial: 700 agents replaced, $40M savings. Then: satisfaction dropped, rehired humans *(cautionary)* |
 
 ### 6.5 Consumer Digital Twins & Market Update (NEW — 2025-2026)
 
@@ -434,6 +439,20 @@
 - **Microsoft AI-SDLC**: Agentic approach with Azure + GitHub ecosystem
 - Key finding: All 2026 frameworks emphasize **multi-agent orchestration** with **human-in-the-loop**
 
+### 7.5.1 Reality Check: Full Automation Does Not Yet Exist (NEW)
+
+**No verified case of end-to-end AI automation spanning the entire product lifecycle exists as of April 2026.**
+
+- MIT GenAI Divide (2025): **95% of AI pilots fail** — root cause is organizational design, not technology
+- All production-verified successes are **partial-phase automation** (see Section 6.4 case studies)
+- EY.ai PDLC (March 2026) is the most ambitious attempt but lacks independent verification
+- **Klarna cautionary case**: Full AI customer service replacement → customer satisfaction dropped → rehired humans → hybrid model
+- Stanford Enterprise AI Playbook (51 cases): Successful pattern is **"narrow and deep"**, not "broad and shallow"
+- Vendor-led builds succeed **67%** vs. internal builds at **33%**
+- Only Tech and Media sectors show material business transformation from GenAI
+
+> **Full analysis**: See [research/cross-cutting/papers/ai-full-automation-reality.md](../research/cross-cutting/papers/ai-full-automation-reality.md)
+
 ### 7.6 AI Product Team Skills & Organizational Transformation (NEW)
 
 - **"When AI Joins the Product Team, Will Leadership Still Drive Innovation?"** — Srivastava, California Management Review, Feb 2026
@@ -453,7 +472,7 @@
 
 | # | Gap Area | Description | Severity |
 |---|---------|-------------|----------|
-| 1 | **End-to-End AI Integration** | No integrative AI framework spanning all product lifecycle phases — **partially addressed**: EY.ai PDLC, McKinsey PDLC, Vallé et al. (2026) | High |
+| 1 | **End-to-End AI Integration** | No integrative AI framework spanning all product lifecycle phases — **frameworks exist but no production-verified full automation** (EY.ai PDLC unverified; Klarna reversal) | High |
 | 2 | **NPD Later Stages** | AI in concept testing, product validation, and post-launch optimization — **partially addressed**: AI QA research (Pysmennyi et al., EY.ai PDLC) | High |
 | 3 | **Agentic AI for PM** | Limited academic research — **partially addressed**: Parikh co-evolutionary model (2025) | High |
 | 4 | **Human-AI Complementarity** | Rarely achieved empirically; insufficient understanding of when/how it works | Medium |
@@ -607,3 +626,8 @@ MIT is a leading hub for AI-for-Product research across multiple labs and depart
 52. Stanford Causal AI Lab. https://scail.stanford.edu/
 53. Srivastava (2026). "When AI Joins the Product Team." California Management Review. https://cmr.berkeley.edu/2026/02/when-ai-joins-the-product-team-will-leadership-still-drives-innovation/
 54. McKinsey. "AI-Enabled Software PDLC." https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/how-an-ai-enabled-software-product-development-life-cycle-will-fuel-innovation
+55. Stanford Digital Economy Lab (2026). "Enterprise AI Playbook: 51 Successful Deployments." https://digitaleconomy.stanford.edu/app/uploads/2026/03/EnterpriseAIPlaybook_PereiraGraylinBrynjolfsson.pdf
+56. EPAM + PostNL. "Delivering Software Products Faster with AI." https://www.epam.com/services/client-work/delivering-software-products-faster-more-efficiently-with-ai
+57. Salesforce. "Agentforce Metrics." https://www.salesforce.com/agentforce/metrics/
+58. PepsiCo + Siemens + NVIDIA (2025). "AI and Digital Twin Collaboration." https://www.pepsico.com/newsroom/press-releases/2025/pepsico-announces-industry-first-ai-and-digital-twin-collaboration-with-siemens-and-nvidia
+59. Klarna AI Reversal (2025). https://tech.co/news/klarna-reverses-ai-overhaul
