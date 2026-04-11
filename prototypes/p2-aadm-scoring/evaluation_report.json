@@ -1,0 +1,701 @@
+{
+  "role_distribution": {
+    "ai_absent": 6,
+    "ai_recommends": 11,
+    "ai_decides": 3,
+    "ai_informs": 3,
+    "ai_assists": 7
+  },
+  "phase_roles": {
+    "Discovery": {
+      "ai_absent": 2,
+      "ai_recommends": 2,
+      "ai_informs": 1
+    },
+    "Design": {
+      "ai_absent": 2,
+      "ai_decides": 1,
+      "ai_assists": 1,
+      "ai_recommends": 1
+    },
+    "Development": {
+      "ai_informs": 2,
+      "ai_decides": 1,
+      "ai_recommends": 1,
+      "ai_absent": 1
+    },
+    "Testing": {
+      "ai_recommends": 4
+    },
+    "Launch": {
+      "ai_assists": 3,
+      "ai_recommends": 1,
+      "ai_absent": 1
+    },
+    "Growth": {
+      "ai_decides": 1,
+      "ai_assists": 3,
+      "ai_recommends": 2
+    }
+  },
+  "boundary_sensitive_count": 50,
+  "boundary_cases": [
+    {
+      "id": 1,
+      "decision": "Which customer problem to pursue next?",
+      "change": "D 2\u21923",
+      "from": "AI Absent",
+      "to": "AI Assists"
+    },
+    {
+      "id": 2,
+      "decision": "Which customer segment shows highest potential?",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 2,
+      "decision": "Which customer segment shows highest potential?",
+      "change": "R 3\u21924",
+      "from": "AI Recommends",
+      "to": "AI Decides"
+    },
+    {
+      "id": 3,
+      "decision": "Should we collect biometric data for personalizati",
+      "change": "D 2\u21923",
+      "from": "AI Absent",
+      "to": "AI Assists"
+    },
+    {
+      "id": 4,
+      "decision": "Which of 5 design directions to pursue?",
+      "change": "D 2\u21923",
+      "from": "AI Absent",
+      "to": "AI Assists"
+    },
+    {
+      "id": 5,
+      "decision": "Does checkout flow meet accessibility standards?",
+      "change": "D 4\u21923",
+      "from": "AI Decides",
+      "to": "AI Informs"
+    },
+    {
+      "id": 5,
+      "decision": "Does checkout flow meet accessibility standards?",
+      "change": "R 4\u21923",
+      "from": "AI Decides",
+      "to": "AI Recommends"
+    },
+    {
+      "id": 7,
+      "decision": "Microservices vs monolith for the new service?",
+      "change": "D 3\u21922",
+      "from": "AI Informs",
+      "to": "AI Absent"
+    },
+    {
+      "id": 7,
+      "decision": "Microservices vs monolith for the new service?",
+      "change": "D 3\u21924",
+      "from": "AI Informs",
+      "to": "AI Recommends"
+    },
+    {
+      "id": 7,
+      "decision": "Microservices vs monolith for the new service?",
+      "change": "S 3\u21922",
+      "from": "AI Informs",
+      "to": "AI Assists"
+    },
+    {
+      "id": 8,
+      "decision": "Use AI-generated code or rewrite manually?",
+      "change": "D 4\u21923",
+      "from": "AI Decides",
+      "to": "AI Informs"
+    },
+    {
+      "id": 8,
+      "decision": "Use AI-generated code or rewrite manually?",
+      "change": "R 4\u21923",
+      "from": "AI Decides",
+      "to": "AI Recommends"
+    },
+    {
+      "id": 8,
+      "decision": "Use AI-generated code or rewrite manually?",
+      "change": "S 4\u21923",
+      "from": "AI Decides",
+      "to": "AI Recommends"
+    },
+    {
+      "id": 9,
+      "decision": "Build, buy, or partner for recommendation engine?",
+      "change": "D 3\u21922",
+      "from": "AI Informs",
+      "to": "AI Absent"
+    },
+    {
+      "id": 9,
+      "decision": "Build, buy, or partner for recommendation engine?",
+      "change": "D 3\u21924",
+      "from": "AI Informs",
+      "to": "AI Recommends"
+    },
+    {
+      "id": 9,
+      "decision": "Build, buy, or partner for recommendation engine?",
+      "change": "S 3\u21922",
+      "from": "AI Informs",
+      "to": "AI Assists"
+    },
+    {
+      "id": 10,
+      "decision": "Is test suite comprehensive enough to ship?",
+      "change": "R 3\u21924",
+      "from": "AI Recommends",
+      "to": "AI Decides"
+    },
+    {
+      "id": 11,
+      "decision": "Ship with 3 known bugs or delay 2 weeks?",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 11,
+      "decision": "Ship with 3 known bugs or delay 2 weeks?",
+      "change": "S 3\u21922",
+      "from": "AI Recommends",
+      "to": "AI Assists"
+    },
+    {
+      "id": 12,
+      "decision": "Should AI-generated tests replace manual test case",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 12,
+      "decision": "Should AI-generated tests replace manual test case",
+      "change": "R 3\u21924",
+      "from": "AI Recommends",
+      "to": "AI Decides"
+    },
+    {
+      "id": 13,
+      "decision": "Launch this quarter or wait for the next?",
+      "change": "D 3\u21922",
+      "from": "AI Assists",
+      "to": "AI Absent"
+    },
+    {
+      "id": 13,
+      "decision": "Launch this quarter or wait for the next?",
+      "change": "S 2\u21923",
+      "from": "AI Assists",
+      "to": "AI Informs"
+    },
+    {
+      "id": 14,
+      "decision": "Set price at $29/mo or $49/mo for enterprise?",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 14,
+      "decision": "Set price at $29/mo or $49/mo for enterprise?",
+      "change": "S 3\u21922",
+      "from": "AI Recommends",
+      "to": "AI Assists"
+    },
+    {
+      "id": 15,
+      "decision": "Soft launch in 2 markets or full global launch?",
+      "change": "D 3\u21922",
+      "from": "AI Assists",
+      "to": "AI Absent"
+    },
+    {
+      "id": 15,
+      "decision": "Soft launch in 2 markets or full global launch?",
+      "change": "S 2\u21923",
+      "from": "AI Assists",
+      "to": "AI Informs"
+    },
+    {
+      "id": 17,
+      "decision": "Should we sunset the legacy product?",
+      "change": "S 2\u21923",
+      "from": "AI Assists",
+      "to": "AI Recommends"
+    },
+    {
+      "id": 18,
+      "decision": "Double down on feature A or pivot to feature B?",
+      "change": "D 3\u21922",
+      "from": "AI Assists",
+      "to": "AI Absent"
+    },
+    {
+      "id": 18,
+      "decision": "Double down on feature A or pivot to feature B?",
+      "change": "S 2\u21923",
+      "from": "AI Assists",
+      "to": "AI Informs"
+    },
+    {
+      "id": 19,
+      "decision": "Optimize recommendation for engagement or revenue?",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 19,
+      "decision": "Optimize recommendation for engagement or revenue?",
+      "change": "S 3\u21922",
+      "from": "AI Recommends",
+      "to": "AI Assists"
+    },
+    {
+      "id": 21,
+      "decision": "Validate product-market fit with synthetic user re",
+      "change": "D 3\u21924",
+      "from": "AI Informs",
+      "to": "AI Recommends"
+    },
+    {
+      "id": 21,
+      "decision": "Validate product-market fit with synthetic user re",
+      "change": "S 3\u21922",
+      "from": "AI Informs",
+      "to": "AI Assists"
+    },
+    {
+      "id": 22,
+      "decision": "Use generative AI for all marketing copy?",
+      "change": "D 3\u21922",
+      "from": "AI Assists",
+      "to": "AI Absent"
+    },
+    {
+      "id": 22,
+      "decision": "Use generative AI for all marketing copy?",
+      "change": "S 2\u21923",
+      "from": "AI Assists",
+      "to": "AI Informs"
+    },
+    {
+      "id": 23,
+      "decision": "Accept AI-suggested architecture refactoring?",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 24,
+      "decision": "Trust AI-generated load test results without manua",
+      "change": "R 3\u21924",
+      "from": "AI Recommends",
+      "to": "AI Decides"
+    },
+    {
+      "id": 25,
+      "decision": "Let AI agent handle tier-1 support from day 1?",
+      "change": "D 3\u21922",
+      "from": "AI Assists",
+      "to": "AI Absent"
+    },
+    {
+      "id": 25,
+      "decision": "Let AI agent handle tier-1 support from day 1?",
+      "change": "S 2\u21923",
+      "from": "AI Assists",
+      "to": "AI Informs"
+    },
+    {
+      "id": 26,
+      "decision": "Use LLM to synthesize 500 interview transcripts?",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 26,
+      "decision": "Use LLM to synthesize 500 interview transcripts?",
+      "change": "S 3\u21922",
+      "from": "AI Recommends",
+      "to": "AI Assists"
+    },
+    {
+      "id": 26,
+      "decision": "Use LLM to synthesize 500 interview transcripts?",
+      "change": "S 3\u21924",
+      "from": "AI Recommends",
+      "to": "AI Decides"
+    },
+    {
+      "id": 27,
+      "decision": "Allow AI to auto-personalize UI per user segment?",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 27,
+      "decision": "Allow AI to auto-personalize UI per user segment?",
+      "change": "S 3\u21922",
+      "from": "AI Recommends",
+      "to": "AI Assists"
+    },
+    {
+      "id": 27,
+      "decision": "Allow AI to auto-personalize UI per user segment?",
+      "change": "S 3\u21924",
+      "from": "AI Recommends",
+      "to": "AI Decides"
+    },
+    {
+      "id": 28,
+      "decision": "Respond to competitor's surprise product launch?",
+      "change": "D 2\u21923",
+      "from": "AI Absent",
+      "to": "AI Assists"
+    },
+    {
+      "id": 29,
+      "decision": "Raise prices 20% based on value metric analysis?",
+      "change": "D 4\u21923",
+      "from": "AI Recommends",
+      "to": "AI Informs"
+    },
+    {
+      "id": 29,
+      "decision": "Raise prices 20% based on value metric analysis?",
+      "change": "S 3\u21922",
+      "from": "AI Recommends",
+      "to": "AI Assists"
+    },
+    {
+      "id": 30,
+      "decision": "Open-source the internal utility library?",
+      "change": "D 2\u21923",
+      "from": "AI Absent",
+      "to": "AI Assists"
+    }
+  ],
+  "confidence_distribution": {
+    "High (\u22650.85)": 12,
+    "Medium (0.7-0.84)": 18
+  },
+  "face_validity_pass": false,
+  "results": [
+    {
+      "id": 1,
+      "phase": "Discovery",
+      "decision": "Which customer problem to pursue next?",
+      "d": 2,
+      "r": 1,
+      "s": 2,
+      "role": "ai_absent",
+      "confidence": 0.85
+    },
+    {
+      "id": 2,
+      "phase": "Discovery",
+      "decision": "Which customer segment shows highest potential?",
+      "d": 4,
+      "r": 3,
+      "s": 4,
+      "role": "ai_recommends",
+      "confidence": 0.85
+    },
+    {
+      "id": 3,
+      "phase": "Discovery",
+      "decision": "Should we collect biometric data for personalization?",
+      "d": 2,
+      "r": 1,
+      "s": 1,
+      "role": "ai_absent",
+      "confidence": 0.85
+    },
+    {
+      "id": 4,
+      "phase": "Design",
+      "decision": "Which of 5 design directions to pursue?",
+      "d": 2,
+      "r": 3,
+      "s": 1,
+      "role": "ai_absent",
+      "confidence": 0.75
+    },
+    {
+      "id": 5,
+      "phase": "Design",
+      "decision": "Does checkout flow meet accessibility standards?",
+      "d": 4,
+      "r": 4,
+      "s": 5,
+      "role": "ai_decides",
+      "confidence": 0.9
+    },
+    {
+      "id": 6,
+      "phase": "Design",
+      "decision": "Which illustration style fits our brand better?",
+      "d": 1,
+      "r": 3,
+      "s": 1,
+      "role": "ai_absent",
+      "confidence": 0.75
+    },
+    {
+      "id": 7,
+      "phase": "Development",
+      "decision": "Microservices vs monolith for the new service?",
+      "d": 3,
+      "r": 1,
+      "s": 3,
+      "role": "ai_informs",
+      "confidence": 0.7
+    },
+    {
+      "id": 8,
+      "phase": "Development",
+      "decision": "Use AI-generated code or rewrite manually?",
+      "d": 4,
+      "r": 4,
+      "s": 4,
+      "role": "ai_decides",
+      "confidence": 0.9
+    },
+    {
+      "id": 9,
+      "phase": "Development",
+      "decision": "Build, buy, or partner for recommendation engine?",
+      "d": 3,
+      "r": 2,
+      "s": 3,
+      "role": "ai_informs",
+      "confidence": 0.7
+    },
+    {
+      "id": 10,
+      "phase": "Testing",
+      "decision": "Is test suite comprehensive enough to ship?",
+      "d": 5,
+      "r": 3,
+      "s": 5,
+      "role": "ai_recommends",
+      "confidence": 0.85
+    },
+    {
+      "id": 11,
+      "phase": "Testing",
+      "decision": "Ship with 3 known bugs or delay 2 weeks?",
+      "d": 4,
+      "r": 2,
+      "s": 3,
+      "role": "ai_recommends",
+      "confidence": 0.75
+    },
+    {
+      "id": 12,
+      "phase": "Testing",
+      "decision": "Should AI-generated tests replace manual test cases?",
+      "d": 4,
+      "r": 3,
+      "s": 4,
+      "role": "ai_recommends",
+      "confidence": 0.85
+    },
+    {
+      "id": 13,
+      "phase": "Launch",
+      "decision": "Launch this quarter or wait for the next?",
+      "d": 3,
+      "r": 1,
+      "s": 2,
+      "role": "ai_assists",
+      "confidence": 0.7
+    },
+    {
+      "id": 14,
+      "phase": "Launch",
+      "decision": "Set price at $29/mo or $49/mo for enterprise?",
+      "d": 4,
+      "r": 3,
+      "s": 3,
+      "role": "ai_recommends",
+      "confidence": 0.75
+    },
+    {
+      "id": 15,
+      "phase": "Launch",
+      "decision": "Soft launch in 2 markets or full global launch?",
+      "d": 3,
+      "r": 2,
+      "s": 2,
+      "role": "ai_assists",
+      "confidence": 0.7
+    },
+    {
+      "id": 16,
+      "phase": "Growth",
+      "decision": "Which of 4 experiment variants shows best conversion?",
+      "d": 5,
+      "r": 5,
+      "s": 5,
+      "role": "ai_decides",
+      "confidence": 0.9
+    },
+    {
+      "id": 17,
+      "phase": "Growth",
+      "decision": "Should we sunset the legacy product?",
+      "d": 4,
+      "r": 1,
+      "s": 2,
+      "role": "ai_assists",
+      "confidence": 0.7
+    },
+    {
+      "id": 18,
+      "phase": "Growth",
+      "decision": "Double down on feature A or pivot to feature B?",
+      "d": 3,
+      "r": 1,
+      "s": 2,
+      "role": "ai_assists",
+      "confidence": 0.7
+    },
+    {
+      "id": 19,
+      "phase": "Growth",
+      "decision": "Optimize recommendation for engagement or revenue?",
+      "d": 4,
+      "r": 3,
+      "s": 3,
+      "role": "ai_recommends",
+      "confidence": 0.75
+    },
+    {
+      "id": 20,
+      "phase": "Growth",
+      "decision": "Is AI recommendation showing bias across demographics?",
+      "d": 4,
+      "r": 2,
+      "s": 1,
+      "role": "ai_assists",
+      "confidence": 0.7
+    },
+    {
+      "id": 21,
+      "phase": "Discovery",
+      "decision": "Validate product-market fit with synthetic user research?",
+      "d": 3,
+      "r": 3,
+      "s": 3,
+      "role": "ai_informs",
+      "confidence": 0.7
+    },
+    {
+      "id": 22,
+      "phase": "Design",
+      "decision": "Use generative AI for all marketing copy?",
+      "d": 3,
+      "r": 4,
+      "s": 2,
+      "role": "ai_assists",
+      "confidence": 0.7
+    },
+    {
+      "id": 23,
+      "phase": "Development",
+      "decision": "Accept AI-suggested architecture refactoring?",
+      "d": 4,
+      "r": 2,
+      "s": 4,
+      "role": "ai_recommends",
+      "confidence": 0.85
+    },
+    {
+      "id": 24,
+      "phase": "Testing",
+      "decision": "Trust AI-generated load test results without manual verification?",
+      "d": 5,
+      "r": 3,
+      "s": 4,
+      "role": "ai_recommends",
+      "confidence": 0.85
+    },
+    {
+      "id": 25,
+      "phase": "Launch",
+      "decision": "Let AI agent handle tier-1 support from day 1?",
+      "d": 3,
+      "r": 2,
+      "s": 2,
+      "role": "ai_assists",
+      "confidence": 0.7
+    },
+    {
+      "id": 26,
+      "phase": "Discovery",
+      "decision": "Use LLM to synthesize 500 interview transcripts?",
+      "d": 4,
+      "r": 4,
+      "s": 3,
+      "role": "ai_recommends",
+      "confidence": 0.75
+    },
+    {
+      "id": 27,
+      "phase": "Design",
+      "decision": "Allow AI to auto-personalize UI per user segment?",
+      "d": 4,
+      "r": 4,
+      "s": 3,
+      "role": "ai_recommends",
+      "confidence": 0.75
+    },
+    {
+      "id": 28,
+      "phase": "Launch",
+      "decision": "Respond to competitor's surprise product launch?",
+      "d": 2,
+      "r": 1,
+      "s": 2,
+      "role": "ai_absent",
+      "confidence": 0.85
+    },
+    {
+      "id": 29,
+      "phase": "Growth",
+      "decision": "Raise prices 20% based on value metric analysis?",
+      "d": 4,
+      "r": 2,
+      "s": 3,
+      "role": "ai_recommends",
+      "confidence": 0.75
+    },
+    {
+      "id": 30,
+      "phase": "Development",
+      "decision": "Open-source the internal utility library?",
+      "d": 2,
+      "r": 1,
+      "s": 2,
+      "role": "ai_absent",
+      "confidence": 0.85
+    }
+  ]
+}
