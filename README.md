@@ -19,7 +19,8 @@
 ```
 ai4-product/
 ├── docs/                      # Completed documents
-│   └── survey-report.md       # Full research survey report
+│   ├── survey-report.md       # Full research survey report
+│   └── prototyping-research-plan.md  # Prototyping research plan
 ├── research/                  # Research by area
 │   ├── 01-discovery/          # Discovery & User Research
 │   ├── 02-design/             # Design & Prototyping
