@@ -3,7 +3,28 @@
 > Research survey on the application of artificial intelligence across the entire product lifecycle — from discovery and research, through design and development, to management, growth, and lifecycle optimization.
 ## Research Areas
 
-### Primary frame — product lifecycle
+This repository is organized in **three complementary frames** — use whichever matches the question you're asking.
+
+### Layer 3 — AI Systems Design & Management (meta)
+
+Treating AI-for-product as a **systems engineering and management** problem. MIT SDM-canonical methods: architecture, MBSE, system dynamics, socio-technical systems, lifecycle, risk/resilience, tradespace, governance.
+
+→ [docs/ai-systems-design-management-framework.md](docs/ai-systems-design-management-framework.md) · [research/ai-systems/](research/ai-systems/)
+
+### Layer 2 — Skill domain (cross-section)
+
+Cuts the lifecycle by **who does the work**. Useful for team composition, tool selection, budget allocation.
+
+| Skill domain | Covers | Directory |
+|---|---|---|
+| **Sales skills** (판매 + 투자) | Selling, pricing, CLV/churn, fundraising, IR, VC DD | [research/sales-skills/](research/sales-skills/) |
+| **Productization skills** (제품 구현) | Code generation, prototyping, generative UI, test automation, refactoring, vibe coding | [research/productization-skills/](research/productization-skills/) |
+
+→ [docs/sales-productization-framework.md](docs/sales-productization-framework.md)
+
+### Layer 1 — Product lifecycle (phases)
+
+The canonical lifecycle cross-section.
 
 | # | Area | Description |
 |---|------|-------------|
@@ -16,24 +37,16 @@
 | 7 | [Industry Trends](research/industry-trends/) | Tech companies, AI startups/tools, consulting reports, industry applications |
 | 8 | [MIT Research](research/mit-research/) | MIT labs, researchers, SDM, Sloan predictions |
 
-### Complementary frame — skill domain
-
-The lifecycle frame traces a product's journey. The **skill frame** ([full document](docs/sales-productization-framework.md)) cuts across the lifecycle by skill domain — useful for team composition and tool selection.
-
-| Skill domain | Covers | Directory |
-|---|---|---|
-| **Sales skills** (판매 + 투자) | Selling, pricing, CLV/churn, fundraising, IR, VC DD | [research/sales-skills/](research/sales-skills/) |
-| **Productization skills** (제품 구현) | Code generation, prototyping, generative UI, test automation, refactoring, vibe coding | [research/productization-skills/](research/productization-skills/) |
-
 ## Project Structure
 
 ```
 ai4-product/
 ├── docs/                      # Completed documents
-│   ├── survey-report.md       # Full research survey report
+│   ├── survey-report.md       # Full research survey report (lifecycle frame)
 │   ├── prototyping-research-plan.md  # Prototyping research plan
 │   ├── simulation-study-plan.md      # Simulation study plan
-│   └── sales-productization-framework.md  # Skill-domain frame (sales vs productization)
+│   ├── sales-productization-framework.md  # Skill-domain frame (Layer 2)
+│   └── ai-systems-design-management-framework.md  # SDM meta-frame (Layer 3)
 ├── research/                  # Research by area
 │   ├── 01-discovery/          # Discovery & User Research
 │   ├── 02-design/             # Design & Prototyping
@@ -42,8 +55,9 @@ ai4-product/
 │   ├── 05-growth-lifecycle/   # Growth & Lifecycle
 │   ├── cross-cutting/         # Cross-cutting themes
 │   ├── industry-trends/       # Company research & industry trends
-│   ├── sales-skills/          # AI for selling + investing (skill frame)
-│   └── productization-skills/ # AI for product implementation (skill frame)
+│   ├── sales-skills/          # AI for selling + investing (Layer 2)
+│   ├── productization-skills/ # AI for product implementation (Layer 2)
+│   └── ai-systems/            # AI Systems Design & Management — SDM meta-frame (Layer 3)
 ├── product/                   # AI Work Advisor — single-file tool
 │   └── index.html             # Open in any browser, no install needed
 ├── prototypes/                # Research prototypes
@@ -62,9 +76,9 @@ ai4-product/
 
 ## Scope
 
-- **Time range:** 2022–2026 (last updated: 2026-04-11)
+- **Time range:** 2022–2026 (last updated: 2026-04-21)
 - **Sources:** Academic papers, practitioner research, and industry reports
-- **Disciplines:** HCI, software engineering, management science, machine learning
+- **Disciplines:** HCI, software engineering, management science, machine learning, **systems engineering (MIT SDM methods)**
 
 ## License
 

@@ -4,7 +4,9 @@
 > Original: 2026-03-07
 > Scope: Academic papers, practitioner research, and industry reports (2022-2026)
 
-> **Complementary frame:** This report organizes AI-for-product research by **product lifecycle phase**. A complementary **skill-domain frame** — Sales (selling + investing) vs. Productization (implementation) — is available in [sales-productization-framework.md](./sales-productization-framework.md) and at [research/sales-skills/](../research/sales-skills/) + [research/productization-skills/](../research/productization-skills/). Both frames are valid cross-sections of the same work.
+> **Three complementary frames:** This report is the **Layer 1 (product lifecycle)** frame. Two additional frames apply:
+> - **Layer 2 (skill domain)** — Sales vs. Productization: [sales-productization-framework.md](./sales-productization-framework.md) · [research/sales-skills/](../research/sales-skills/) · [research/productization-skills/](../research/productization-skills/)
+> - **Layer 3 (SDM meta-frame)** — AI Systems Design & Management: [ai-systems-design-management-framework.md](./ai-systems-design-management-framework.md) · [research/ai-systems/](../research/ai-systems/)
 
 ---
 

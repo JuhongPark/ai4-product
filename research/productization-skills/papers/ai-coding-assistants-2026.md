@@ -14,6 +14,8 @@ AI coding assistants have bifurcated into three usage modes:
 
 By April 2026, **Claude Opus 4.7** leads SWE-bench Verified at **87.6%**, and the typical developer stack is *Cursor for daily editing + Claude Code for complex tasks*.
 
+> **SDM systems view:** The three modes are **three architectural patterns** (direct single-call, orchestrator-subagent, autonomous workflow graph) — see [ai-system-architecture.md](../../ai-systems/papers/ai-system-architecture.md). Selection among them is a tradespace decision across cost/quality/latency/flexibility — see [ai-tradespace-real-options.md](../../ai-systems/papers/ai-tradespace-real-options.md). The productivity paradox is a system-dynamics phenomenon — see [system-dynamics-ai-adoption.md](../../ai-systems/papers/system-dynamics-ai-adoption.md).
+
 ---
 
 ## 2. Benchmark Leadership (April 2026)

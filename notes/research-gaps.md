@@ -39,6 +39,33 @@ See [docs/sales-productization-framework.md](../docs/sales-productization-framew
 | 26 | **Contract-negotiation AI autonomy boundaries** — Where full autonomy is safe vs. where humans must stay in loop | Medium |
 | 27 | **MCP security surface** — Enterprise data accessed via MCP to AI endpoints creates new risk class | High |
 
+## SDM Meta-Frame Gaps (April 2026 — Systems Design & Management Lens)
+
+See [docs/ai-systems-design-management-framework.md](../docs/ai-systems-design-management-framework.md) and [research/ai-systems/](../research/ai-systems/). These are the thesis-scale gaps an MIT SDM committee would expect:
+
+| # | Gap Area | Severity |
+|---|---|---|
+| 28 | **INCOSE-style reference architecture for compound AI product systems** — No standardized reference model; every org re-architects from scratch | High |
+| 29 | **SysML v2 + AI authoring integrity** — LLM-generated SysML has critical errors; human-AI model-authoring workflow undefined | Medium |
+| 30 | **OPM for compound AI systems** — No published OPM reference model | Medium |
+| 31 | **DSM analysis of AI product org structures** — Coupling analysis for team-to-team + product-to-product under-researched | High |
+| 32 | **Quantitative SD model of METR productivity paradox** — Qualitative CLDs exist; calibrated Vensim/Stella model absent | High |
+| 33 | **STS empirical experiments for AI tool adoption** — Joint-optimization hypothesis rarely tested in isolation | High |
+| 34 | **Prompt drift measurement methodology** — No standard; vendors inconsistent on model-version disclosure | High |
+| 35 | **AgentOps maturity model** — No accepted framework (unlike MLOps's 4-stage maturity) | Medium |
+| 36 | **STAMP/STPA for compound AI systems** — No published STPA reference analysis for canonical agentic patterns | High |
+| 37 | **Safety-III for LLM-specific failures** — MIT Safety-III not fully adapted to LLM hazards | High |
+| 38 | **Option-pricing for AI flexibility** — Black-Scholes assumptions poor fit for AI tech curves | Medium |
+| 39 | **AI tradespace at scale (30k+ candidates)** — Exceeds typical TSE tool capacity | Medium |
+| 40 | **Integrated governance-architecture reference model** — RACI + observability + policy as one coherent spec | High |
+| 41 | **Governance speed as SD variable** — How the delay in governance response affects balancing loops in AI adoption | Medium |
+| 42 | **Board-level AI oversight model** — Emerging practice; no validated model | High |
+| 43 | **Observability substrate standardization** — L1–L5 layered observability lacks standard interfaces | Medium |
+| 44 | **Cross-stage handoff friction (concept → ops → retirement)** — Lifecycle transition cost unmeasured | Medium |
+| 45 | **Safety-case tooling for AI** — Aerospace/automotive has GSN; AI lacks equivalent | High |
+
+Each of these could anchor an SDM master's thesis.
+
 ## Promising Research Directions
 
 1. **Agentic AI for Full-Lifecycle PM** — Autonomous AI agents managing multi-phase product workflows from discovery to optimization

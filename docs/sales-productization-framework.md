@@ -2,6 +2,8 @@
 
 > **Date:** 2026-04-21
 > **Purpose:** Re-frame the repo's lifecycle-organized research through a complementary skill lens — sales (selling + investing) vs. productization (product implementation).
+>
+> **Note:** This is the **Layer 2 frame** of the repository. For the **Layer 3 (SDM meta-frame — architecture, MBSE, system dynamics, socio-technical, lifecycle, risk/resilience, tradespace, governance)**, see [ai-systems-design-management-framework.md](ai-systems-design-management-framework.md). Both are complementary cross-sections of the same underlying AI-for-product domain.
 
 ---
 

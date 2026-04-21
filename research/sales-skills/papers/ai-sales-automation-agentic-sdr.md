@@ -12,6 +12,8 @@ By 2026, agentic AI has become the dominant deployment model in the top of the s
 
 Gartner's most cited 2025 prediction — that AI agents will outnumber human sellers by 10x by 2028 — frames the directional consensus. The simultaneous warning (<40% of sellers will report AI agents improved productivity) surfaces the same governance and complementarity gap documented in product development: adoption breadth outpaces measurable value delivery.
 
+> **SDM systems view:** The Gartner paradox (10x agents yet <40% productivity improvement) is a **system-dynamics result**, not a measurement error — see [system-dynamics-ai-adoption.md](../../ai-systems/papers/system-dynamics-ai-adoption.md) for the CLD of prospect fatigue. The Klarna-style reversal risk is a **STAMP control-structure failure** analyzable with STPA — see [ai-risk-resilience.md](../../ai-systems/papers/ai-risk-resilience.md). Full SDR→AE→CSM agent flow is an architecture question about interface standardization (MCP) and joint STS optimization.
+
 ---
 
 ## 2. Market Adoption & Sizing

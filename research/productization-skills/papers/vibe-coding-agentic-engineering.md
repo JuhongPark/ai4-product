@@ -11,6 +11,8 @@
 
 The terminology shift reflects a sobering — from "vibes are enough" to "AI agents need engineering discipline."
 
+> **SDM systems view:** Vibe coding is a **socio-technical system change** (see [socio-technical-ai-systems.md](../../ai-systems/papers/socio-technical-ai-systems.md)) — not a technology change. New technology (text-to-app tools) without corresponding changes in tasks, people, and structure produces the classic Trist failure mode: technology deployed into unchanged social system → subsystem optimization fails. The 2.74x security vulnerability rate is a **STAMP control-structure gap** — the constraints that discipline normally provides (review, testing, threat modeling) are absent.
+
 ---
 
 ## 2. Paradigm Shift
