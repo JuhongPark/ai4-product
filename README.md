@@ -3,6 +3,8 @@
 > Research survey on the application of artificial intelligence across the entire product lifecycle — from discovery and research, through design and development, to management, growth, and lifecycle optimization.
 ## Research Areas
 
+### Primary frame — product lifecycle
+
 | # | Area | Description |
 |---|------|-------------|
 | 1 | [Discovery & User Research](research/01-discovery/) | AI-automated UX evaluation, LLM-powered customer insights, synthetic user research |
@@ -14,13 +16,24 @@
 | 7 | [Industry Trends](research/industry-trends/) | Tech companies, AI startups/tools, consulting reports, industry applications |
 | 8 | [MIT Research](research/mit-research/) | MIT labs, researchers, SDM, Sloan predictions |
 
+### Complementary frame — skill domain
+
+The lifecycle frame traces a product's journey. The **skill frame** ([full document](docs/sales-productization-framework.md)) cuts across the lifecycle by skill domain — useful for team composition and tool selection.
+
+| Skill domain | Covers | Directory |
+|---|---|---|
+| **Sales skills** (판매 + 투자) | Selling, pricing, CLV/churn, fundraising, IR, VC DD | [research/sales-skills/](research/sales-skills/) |
+| **Productization skills** (제품 구현) | Code generation, prototyping, generative UI, test automation, refactoring, vibe coding | [research/productization-skills/](research/productization-skills/) |
+
 ## Project Structure
 
 ```
 ai4-product/
 ├── docs/                      # Completed documents
 │   ├── survey-report.md       # Full research survey report
-│   └── prototyping-research-plan.md  # Prototyping research plan
+│   ├── prototyping-research-plan.md  # Prototyping research plan
+│   ├── simulation-study-plan.md      # Simulation study plan
+│   └── sales-productization-framework.md  # Skill-domain frame (sales vs productization)
 ├── research/                  # Research by area
 │   ├── 01-discovery/          # Discovery & User Research
 │   ├── 02-design/             # Design & Prototyping
@@ -28,7 +41,9 @@ ai4-product/
 │   ├── 04-management/         # Management & Decision Making
 │   ├── 05-growth-lifecycle/   # Growth & Lifecycle
 │   ├── cross-cutting/         # Cross-cutting themes
-│   └── industry-trends/      # Company research & industry trends
+│   ├── industry-trends/       # Company research & industry trends
+│   ├── sales-skills/          # AI for selling + investing (skill frame)
+│   └── productization-skills/ # AI for product implementation (skill frame)
 ├── product/                   # AI Work Advisor — single-file tool
 │   └── index.html             # Open in any browser, no install needed
 ├── prototypes/                # Research prototypes

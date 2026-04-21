@@ -1,8 +1,10 @@
 # AI for Product: Research Survey Report
 
-> Date: 2026-04-11 (Updated)
+> Date: 2026-04-21 (Updated)
 > Original: 2026-03-07
 > Scope: Academic papers, practitioner research, and industry reports (2022-2026)
+
+> **Complementary frame:** This report organizes AI-for-product research by **product lifecycle phase**. A complementary **skill-domain frame** — Sales (selling + investing) vs. Productization (implementation) — is available in [sales-productization-framework.md](./sales-productization-framework.md) and at [research/sales-skills/](../research/sales-skills/) + [research/productization-skills/](../research/productization-skills/). Both frames are valid cross-sections of the same work.
 
 ---
 
