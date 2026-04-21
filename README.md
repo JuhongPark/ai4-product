@@ -37,6 +37,16 @@ The canonical lifecycle cross-section.
 | 7 | [Industry Trends](research/industry-trends/) | Tech companies, AI startups/tools, consulting reports, industry applications |
 | 8 | [MIT Research](research/mit-research/) | MIT labs, researchers, SDM, Sloan predictions |
 
+### Special Topic — Sector verticals
+
+Sector-specific cross-sections that re-apply Layers 1-3 to one industry. Not the main topic, but used to stress-test generic SDM claims against a regulated domain.
+
+| Vertical | Covers | Directory |
+|---|---|---|
+| **Healthcare / Bio AI** (헬스케어·바이오 AI) | Drug discovery, clinical trials, medical imaging, CDS + ambient scribes, hospital ops, patient-facing, regulation, safety | [research/healthcare-bio-ai/](research/healthcare-bio-ai/) |
+
+→ [docs/healthcare-bio-ai-framework.md](docs/healthcare-bio-ai-framework.md)
+
 ## Project Structure
 
 ```
@@ -46,7 +56,8 @@ ai4-product/
 │   ├── prototyping-research-plan.md  # Prototyping research plan
 │   ├── simulation-study-plan.md      # Simulation study plan
 │   ├── sales-productization-framework.md  # Skill-domain frame (Layer 2)
-│   └── ai-systems-design-management-framework.md  # SDM meta-frame (Layer 3)
+│   ├── ai-systems-design-management-framework.md  # SDM meta-frame (Layer 3)
+│   └── healthcare-bio-ai-framework.md  # Healthcare/Bio AI sector vertical (special topic)
 ├── research/                  # Research by area
 │   ├── 01-discovery/          # Discovery & User Research
 │   ├── 02-design/             # Design & Prototyping
@@ -57,7 +68,8 @@ ai4-product/
 │   ├── industry-trends/       # Company research & industry trends
 │   ├── sales-skills/          # AI for selling + investing (Layer 2)
 │   ├── productization-skills/ # AI for product implementation (Layer 2)
-│   └── ai-systems/            # AI Systems Design & Management — SDM meta-frame (Layer 3)
+│   ├── ai-systems/            # AI Systems Design & Management — SDM meta-frame (Layer 3)
+│   └── healthcare-bio-ai/     # Healthcare/Bio AI sector vertical (special topic)
 ├── product/                   # AI Work Advisor — single-file tool
 │   └── index.html             # Open in any browser, no install needed
 ├── prototypes/                # Research prototypes
