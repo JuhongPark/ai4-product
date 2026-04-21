@@ -59,10 +59,18 @@ This complementary pair with [productization-skills/](../productization-skills/)
 
 ## Papers in this directory
 
+### A1. Selling
 - [ai-sales-automation-agentic-sdr.md](papers/ai-sales-automation-agentic-sdr.md) — Agentic AI SDR, autonomous sales agents, Gartner projections
 - [ai-revenue-operations.md](papers/ai-revenue-operations.md) — RevOps, sales enablement, B2B SLR
+- [ai-abm-intent-data.md](papers/ai-abm-intent-data.md) — ABM platforms, intent data, predictive account scoring
+- [ai-customer-success.md](papers/ai-customer-success.md) — Gainsight MCP, retention automation
+- [ai-sales-coaching-conversation.md](papers/ai-sales-coaching-conversation.md) — Gong, Chorus, call intelligence
 - [ai-dynamic-pricing.md](papers/ai-dynamic-pricing.md) — RL/ML pricing, systematic literature review
 - [ai-sales-forecasting-clv.md](papers/ai-sales-forecasting-clv.md) — CLV prediction, churn, forecasting models
+- [ai-conversational-commerce.md](papers/ai-conversational-commerce.md) — B2C chat commerce, conversational AI
+- [ai-negotiation-contract.md](papers/ai-negotiation-contract.md) — Pactum, Icertis, contract AI
+
+### A2. Investing & Fundraising
 - [ai-pitch-deck-fundraising.md](papers/ai-pitch-deck-fundraising.md) — AI pitch deck & investor matching platforms
 - [ai-investor-relations.md](papers/ai-investor-relations.md) — IR automation, agentic workflows
 - [ai-vc-deal-sourcing-dd.md](papers/ai-vc-deal-sourcing-dd.md) — VC deal sourcing, AI due diligence

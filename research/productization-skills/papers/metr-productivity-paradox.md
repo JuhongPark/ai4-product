@@ -1,15 +1,17 @@
 # The METR Productivity Paradox: Vendor Claims vs. Independent RCT
 
 > **Date:** 2026-04-21
-> **Scope:** METR randomized controlled trial (2025), follow-up studies (2026), methodological analysis
+> **Scope:** METR randomized controlled trial (2025), follow-up study (2026), methodological analysis
 
 ---
 
 ## 1. Summary
 
-The METR **randomized controlled trial** — the first peer-reviewed RCT on AI coding productivity — found that allowing AI tools increased task completion time by **19%** for experienced open-source developers. Developers predicted a **24% speedup** and, after the study, still believed AI **helped them by 20%** — despite actually experiencing a slowdown.
+The METR **randomized controlled trial** (July 2025) — the most widely-cited independent RCT on AI coding productivity — found that allowing AI tools increased task completion time by **19%** for experienced open-source developers. Developers predicted a **24% speedup** and, after the study, still believed AI **helped them by 20%** — despite actually experiencing a slowdown.
 
-This is the most important empirical counterweight to vendor productivity claims in the 2026 literature and fundamentally reshapes how productization AI tools should be evaluated.
+A **2026-02 follow-up** showed the signal flipping in the opposite direction (**-18% speedup** point estimate) once broader-pool recruiting was attempted, but researchers labeled the follow-up result unreliable due to selection bias.
+
+**Net takeaway**: For experienced OSS developers in 2025 the measured result was -19%; the replication is inconclusive. The AI productivity question is **not settled** for experienced developers on their own codebases. This is the most important empirical counterweight to vendor productivity claims in the 2026 literature.
 
 ---
 
@@ -43,15 +45,20 @@ This is one of the sharpest objective/subjective gaps in SE productivity researc
 
 ---
 
-## 4. 2026 Follow-Up: Measurement Challenges
+## 4. 2026 Follow-Up: The Signal Flipped — But Unreliably
 
-METR's 2026-02 update (https://metr.org/blog/2026-02-24-uplift-update/) reports a **larger-scale follow-up failed to produce reliable signal**:
-- Started August 2025
-- **Significant selection bias**: developers unwilling to work without AI dropped out
-- Remaining pool likely biased toward AI-tolerant developers
-- Estimate of AI uplift therefore biased *downward* (relative to bias-free sample)
+METR's 2026-02 update (https://metr.org/blog/2026-02-24-uplift-update/) reports that the late-2025 follow-up **partially contradicted** the 19% slowdown. Key details:
 
-This suggests the measurement problem itself is getting harder as AI tools become embedded.
+- Restarted August 2025 with broader pool and design changes
+- Observed point estimates: **-18% speedup for original developers**, **-4% for new recruits** (sign flip vs 2025 RCT)
+- **But researchers label these unreliable** due to selection effects:
+  - 30–50% of developers chose not to submit some tasks because they didn't want to do them without AI
+  - Hourly pay dropped from $150 to $50, biasing participation
+  - AI-enthusiastic developers self-selected out of the no-AI arm
+- Researchers note the true speedup "could be much higher" than measured
+- Study redesign underway: shorter intensive experiments, observational GitHub data, fixed-task designs, developer-level randomization
+
+**Interpretation**: Neither the original 19% slowdown nor the 18% speedup should be treated as a settled point estimate. The measurement problem is substantially harder than vendor studies imply, and **the true effect on experienced developers in late 2025 / 2026 remains empirically unresolved**.
 
 ---
 

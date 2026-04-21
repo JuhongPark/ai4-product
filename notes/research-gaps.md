@@ -20,6 +20,25 @@
 | 14 | **Hyper-Personalization Effects** — Long-term effects of AI-driven hyper-personalization on user autonomy under-studied | Medium |
 | 15 | **AI Cognitive Atrophy** — Risk of diminishing human creative/cognitive abilities through AI reliance (Rigobon, MIT 2026) | Medium |
 
+## Skill-Frame Gaps (April 2026 — Sales/Productization Lens)
+
+See [docs/sales-productization-framework.md](../docs/sales-productization-framework.md). Gaps unique to the skill frame:
+
+| # | Gap Area | Severity |
+|---|---|---|
+| 16 | **Peer-reviewed sales AI studies** — Most claims come from vendor surveys; academic RCTs sparse relative to adoption size | High |
+| 17 | **AI SDR longitudinal effectiveness** — CLV of AI-acquired customers vs. human-acquired unknown | High |
+| 18 | **AI-on-AI arms race outcomes** — Founder-AI vs investor-AI, seller-AI vs buyer-AI: no measurement | Medium |
+| 19 | **METR productivity paradox resolution** — True magnitude of AI's effect on experienced developers unresolved (2025 RCT: -19%; 2026 follow-up inconclusive) | High |
+| 20 | **Vibe-coded app survival rate** — What fraction of prototypes built on Lovable/v0/Bolt reach sustained production use? | Medium |
+| 21 | **Cross-skill feedback loops** — Product telemetry → sales AI feedback integration unstudied | Medium |
+| 22 | **Solo founder outcome data** — Survival, success, failure patterns for one-person AI-native startups | Medium |
+| 23 | **EU AI Act product classification ambiguity** — Borderline high-risk cases (HR tools, credit-proximate AI) not clarified | High |
+| 24 | **Entry-level talent pipeline** — Loss of junior SDR/junior dev roles disrupts senior talent formation | High |
+| 25 | **Korean AI ecosystem visibility** — Korean research underrepresented in English SLRs | Low |
+| 26 | **Contract-negotiation AI autonomy boundaries** — Where full autonomy is safe vs. where humans must stay in loop | Medium |
+| 27 | **MCP security surface** — Enterprise data accessed via MCP to AI endpoints creates new risk class | High |
+
 ## Promising Research Directions
 
 1. **Agentic AI for Full-Lifecycle PM** — Autonomous AI agents managing multi-phase product workflows from discovery to optimization

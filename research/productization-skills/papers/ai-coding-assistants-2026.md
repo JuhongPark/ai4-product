@@ -62,7 +62,7 @@ This is the most important empirical disagreement in 2026 SWE productivity liter
 | Study type | Result | Example |
 |---|---|---|
 | **Vendor-conducted** | 39–100% faster / more PRs | GitHub Copilot (55% faster); Cursor/UChicago (39% more merged PRs) |
-| **Independent RCT** | **19% slower** | METR (2025) — 16 experienced OSS devs, 246 tasks |
+| **Independent RCT** | **19% slower** (2025) → inconclusive in 2026 replication | METR (2025) — 16 experienced OSS devs, 246 tasks; see [metr-productivity-paradox.md](metr-productivity-paradox.md) |
 
 See [metr-productivity-paradox.md](metr-productivity-paradox.md) for full METR analysis.
 

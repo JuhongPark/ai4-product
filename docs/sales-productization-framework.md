@@ -47,32 +47,70 @@ Activities outside both domains (discovery research, management meta-layer, gove
 
 ## 4. What the Skill Frame Adds
 
-### 4.1 Sales coverage (mostly new to this repo)
+### 4.1 Sales coverage (mostly new to this repo — 12 papers)
 
 See [research/sales-skills/](../research/sales-skills/):
 
-| Topic | Coverage in repo prior | Coverage now |
-|---|---|---|
-| Agentic AI SDR | None | [ai-sales-automation-agentic-sdr.md](../research/sales-skills/papers/ai-sales-automation-agentic-sdr.md) |
-| Revenue Operations | None | [ai-revenue-operations.md](../research/sales-skills/papers/ai-revenue-operations.md) |
-| Dynamic Pricing | None | [ai-dynamic-pricing.md](../research/sales-skills/papers/ai-dynamic-pricing.md) |
-| Sales forecasting, CLV, churn | None | [ai-sales-forecasting-clv.md](../research/sales-skills/papers/ai-sales-forecasting-clv.md) |
-| AI pitch decks + fundraising | None | [ai-pitch-deck-fundraising.md](../research/sales-skills/papers/ai-pitch-deck-fundraising.md) |
-| Investor Relations automation | None | [ai-investor-relations.md](../research/sales-skills/papers/ai-investor-relations.md) |
-| VC deal sourcing + DD | None | [ai-vc-deal-sourcing-dd.md](../research/sales-skills/papers/ai-vc-deal-sourcing-dd.md) |
+**A1. Selling**
+| Topic | Paper |
+|---|---|
+| Agentic AI SDR | [ai-sales-automation-agentic-sdr.md](../research/sales-skills/papers/ai-sales-automation-agentic-sdr.md) |
+| Revenue Operations | [ai-revenue-operations.md](../research/sales-skills/papers/ai-revenue-operations.md) |
+| Account-Based Marketing + intent data | [ai-abm-intent-data.md](../research/sales-skills/papers/ai-abm-intent-data.md) |
+| Customer Success + retention | [ai-customer-success.md](../research/sales-skills/papers/ai-customer-success.md) |
+| Sales coaching + call intelligence | [ai-sales-coaching-conversation.md](../research/sales-skills/papers/ai-sales-coaching-conversation.md) |
+| Dynamic pricing | [ai-dynamic-pricing.md](../research/sales-skills/papers/ai-dynamic-pricing.md) |
+| Forecasting, CLV, churn | [ai-sales-forecasting-clv.md](../research/sales-skills/papers/ai-sales-forecasting-clv.md) |
+| B2C conversational commerce | [ai-conversational-commerce.md](../research/sales-skills/papers/ai-conversational-commerce.md) |
+| Negotiation & contract automation | [ai-negotiation-contract.md](../research/sales-skills/papers/ai-negotiation-contract.md) |
 
-### 4.2 Productization coverage (new 2026 empirical layer)
+**A2. Investing & Fundraising**
+| Topic | Paper |
+|---|---|
+| AI pitch decks + fundraising | [ai-pitch-deck-fundraising.md](../research/sales-skills/papers/ai-pitch-deck-fundraising.md) |
+| Investor Relations automation | [ai-investor-relations.md](../research/sales-skills/papers/ai-investor-relations.md) |
+| VC deal sourcing + DD | [ai-vc-deal-sourcing-dd.md](../research/sales-skills/papers/ai-vc-deal-sourcing-dd.md) |
+
+### 4.2 Productization coverage (2026 empirical layer — 10 papers)
 
 See [research/productization-skills/](../research/productization-skills/):
 
-| Topic | Existing coverage | Added |
-|---|---|---|
-| AI coding assistants | Mentioned (practical-applications.md) | [ai-coding-assistants-2026.md](../research/productization-skills/papers/ai-coding-assistants-2026.md) — SWE-bench Opus 4.7 87.6%, tool comparison |
-| Rapid prototyping (v0/Lovable/Bolt) | Not covered | [ai-rapid-prototyping.md](../research/productization-skills/papers/ai-rapid-prototyping.md) |
-| Test automation | 03-development has it | [ai-test-automation-2026.md](../research/productization-skills/papers/ai-test-automation-2026.md) — 2026 adoption & CI/CD integration |
-| Refactoring | Not dedicated | [ai-code-refactoring.md](../research/productization-skills/papers/ai-code-refactoring.md) |
-| Vibe coding paradigm | Not covered | [vibe-coding-agentic-engineering.md](../research/productization-skills/papers/vibe-coding-agentic-engineering.md) |
-| METR productivity RCT | Not covered | [metr-productivity-paradox.md](../research/productization-skills/papers/metr-productivity-paradox.md) |
+**B1. Code generation & review**
+| Topic | Paper |
+|---|---|
+| AI coding assistants | [ai-coding-assistants-2026.md](../research/productization-skills/papers/ai-coding-assistants-2026.md) |
+| Code review (CodeRabbit, Copilot) | [ai-code-review.md](../research/productization-skills/papers/ai-code-review.md) |
+| Refactoring | [ai-code-refactoring.md](../research/productization-skills/papers/ai-code-refactoring.md) |
+| Vibe coding paradigm | [vibe-coding-agentic-engineering.md](../research/productization-skills/papers/vibe-coding-agentic-engineering.md) |
+| METR productivity paradox | [metr-productivity-paradox.md](../research/productization-skills/papers/metr-productivity-paradox.md) |
+
+**B2. Prototyping & build**
+| Topic | Paper |
+|---|---|
+| Rapid prototyping (v0/Lovable/Bolt/Replit/Figma Make) | [ai-rapid-prototyping.md](../research/productization-skills/papers/ai-rapid-prototyping.md) |
+
+**B3. Test, secure, operate**
+| Topic | Paper |
+|---|---|
+| Test automation | [ai-test-automation-2026.md](../research/productization-skills/papers/ai-test-automation-2026.md) |
+| DevSecOps (Snyk, AI code vulnerabilities) | [ai-devsecops-security.md](../research/productization-skills/papers/ai-devsecops-security.md) |
+| SRE & incident response | [ai-sre-incident-response.md](../research/productization-skills/papers/ai-sre-incident-response.md) |
+
+**B4. Modernization**
+| Topic | Paper |
+|---|---|
+| Legacy modernization (COBOL, Project Bob) | [ai-legacy-modernization.md](../research/productization-skills/papers/ai-legacy-modernization.md) |
+
+### 4.3 Cross-cutting coverage (new — 4 papers)
+
+Not strictly sales or productization, but shaping both:
+
+| Topic | Paper |
+|---|---|
+| EU AI Act enforcement 2026 | [eu-ai-act-product-impact-2026.md](../research/cross-cutting/papers/eu-ai-act-product-impact-2026.md) |
+| Korean AI ecosystem | [korean-ai-product-ecosystem-2026.md](../research/cross-cutting/papers/korean-ai-product-ecosystem-2026.md) |
+| Solo founder AI stack | [solo-founder-ai-stack.md](../research/cross-cutting/papers/solo-founder-ai-stack.md) |
+| AI labor market impact | [ai-labor-market-impact-2026.md](../research/cross-cutting/papers/ai-labor-market-impact-2026.md) |
 
 ---
 

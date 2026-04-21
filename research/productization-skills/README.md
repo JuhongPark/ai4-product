@@ -24,7 +24,7 @@ This complementary pair with [sales-skills/](../sales-skills/) divides the produ
 
 ### B2. Rapid Prototyping & Generative UI
 - v0 (Vercel): 6M+ developers, full-stack agentic platform (Feb 2026)
-- Lovable: $20M ARR in 2 months — fastest European startup growth
+- Lovable (launched Nov 2024): $17M ARR at 4 months → $100M at 8 months → $200M Series A at $1.8B valuation; $330M Series B at $6.6B (Dec 2025)
 - Bolt.new, Replit Agent, Figma Make
 - PM-to-pixel workflow shift
 
@@ -61,7 +61,7 @@ This complementary pair with [sales-skills/](../sales-skills/) divides the produ
 - **Claude Opus 4.7**: 87.6% on SWE-bench Verified (+7pt vs 4.6); Gemini 3.1 Pro 80.6%
 - **Cursor study (UChicago)**: +39% merged PRs
 - **GitHub Copilot vendor study**: 55% faster task completion
-- **METR RCT (2025)**: experienced OSS devs **19% SLOWER** with AI — self-report says 20% faster; empirical opposite
+- **METR RCT (2025)**: experienced OSS devs **19% SLOWER** with AI — self-report says 20% faster; 2026-02 follow-up suggests selection-bias makes the true number unresolved
 
 ### Test Automation
 - **89%** of orgs piloting GenAI-augmented QA; **19%** productivity gain
@@ -72,7 +72,7 @@ This complementary pair with [sales-skills/](../sales-skills/) divides the produ
 
 ## Research Gaps
 
-1. **Productivity paradox** — Vendor-reported gains (50–100%) contradict independent RCT data (METR: -19%); mechanism unclear (learning curve? task selection? context-switching?)
+1. **Productivity paradox** — Vendor-reported gains (50–100%) vs. independent METR RCT (-19% in 2025, flipped in unreliable 2026 replication); mechanism and true magnitude both unresolved
 2. **Code quality long-term effects** — 4x growth in code clones (GitClear); refactoring share declining — hidden technical debt
 3. **Full SDLC automation** — EY.ai PDLC (80x acceleration claim) lacks independent verification; Devin at 15% success on independent tests
 4. **Vibe coding safety** — AI-generated code 1.7x more likely to have major issues, 2.74x more vulnerable to security issues; no accepted safety framework
@@ -84,9 +84,20 @@ This complementary pair with [sales-skills/](../sales-skills/) divides the produ
 
 ## Papers in this directory
 
+### B1. Code Generation & Review
 - [ai-coding-assistants-2026.md](papers/ai-coding-assistants-2026.md) — Copilot, Cursor, Claude Code, SWE-bench
-- [ai-rapid-prototyping.md](papers/ai-rapid-prototyping.md) — v0, Lovable, Bolt, Replit Agent, Figma Make
-- [ai-test-automation-2026.md](papers/ai-test-automation-2026.md) — Self-healing, CI/CD integration
+- [ai-code-review.md](papers/ai-code-review.md) — CodeRabbit, Copilot review, PR automation
 - [ai-code-refactoring.md](papers/ai-code-refactoring.md) — Structural refactoring, human-AI split
 - [vibe-coding-agentic-engineering.md](papers/vibe-coding-agentic-engineering.md) — Paradigm shift and limits
 - [metr-productivity-paradox.md](papers/metr-productivity-paradox.md) — METR RCT and the measurement crisis
+
+### B2. Prototyping & Build
+- [ai-rapid-prototyping.md](papers/ai-rapid-prototyping.md) — v0, Lovable, Bolt, Replit Agent, Figma Make
+
+### B3. Test, Secure, Operate
+- [ai-test-automation-2026.md](papers/ai-test-automation-2026.md) — Self-healing, CI/CD integration
+- [ai-devsecops-security.md](papers/ai-devsecops-security.md) — Snyk, AI-generated code vulnerabilities
+- [ai-sre-incident-response.md](papers/ai-sre-incident-response.md) — Azure SRE Agent, agentic DevOps
+
+### B4. Modernization
+- [ai-legacy-modernization.md](papers/ai-legacy-modernization.md) — COBOL/mainframe, Claude Code, IBM Project Bob

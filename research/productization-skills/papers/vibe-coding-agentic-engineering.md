@@ -40,7 +40,7 @@ The terminology shift reflects a sobering — from "vibes are enough" to "AI age
 Vibe coding + agentic AI are "killing the old startup model of dev teams, big funding, and slow builds" — founders can take an idea to working product in days.
 
 Examples:
-- **Lovable**: $20M ARR in 2 months — built by non-technical founders
+- **Lovable** (launched Nov 2024): $100M ARR in 8 months, $1.8B unicorn valuation by July 2025 — adoption heavily non-technical
 - **v0 users**: 6M+ — many are PMs and designers, not engineers
 - **Indie hacker trend**: Solo founders shipping full SaaS from prompts
 

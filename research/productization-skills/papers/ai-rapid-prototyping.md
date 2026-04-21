@@ -16,7 +16,7 @@ Between 2024 and 2026, a new class of tool emerged — **text-to-app** platforms
 | Platform | Sweet spot | Notable metric |
 |---|---|---|
 | **v0 (Vercel)** | UI generation, React + Next.js + shadcn/ui | 6M+ developers (March 2026); Feb 2026 update made it production-ready full-stack |
-| **Lovable** | Non-technical PM flows, natural-language app creation | $20M ARR in 2 months (fastest European startup growth) |
+| **Lovable** | Non-technical PM flows, natural-language app creation | Nov 2024 launch → $17M ARR in ~4 months → $100M ARR in 8 months → $200M Series A at $1.8B valuation (July 2025); Dec 2025: $330M round at $6.6B valuation |
 | **Bolt.new** | Browser-native polished IDE experience | Fastest idea → demo iteration |
 | **Replit Agent** | Full-stack with built-in DB/auth/hosting | $1.16B valuation |
 | **Figma Make** | Prompt-to-UI with design-system coherence | Design-to-code continuity |
@@ -39,7 +39,9 @@ This trajectory mirrors other platforms: each started as "prototyping-only," all
 
 ## 4. Lovable: The Non-Technical Founder Path
 
-Lovable's growth ($20M ARR in 2 months) reveals a latent market: **non-technical founders and PMs who want to ship functional software without engineers**. It is the canonical example of *vibe coding for builders* (see [vibe-coding-agentic-engineering.md](vibe-coding-agentic-engineering.md)).
+Lovable (Swedish, launched Nov 2024) posted the fastest-growing SaaS trajectory on record: $17M ARR in ~4 months, $100M ARR in 8 months, $200M Series A at $1.8B valuation (July 2025), $330M round at $6.6B valuation (December 2025). It reveals a latent market: **non-technical founders and PMs who want to ship functional software without engineers** — the canonical *vibe coding for builders* example (see [vibe-coding-agentic-engineering.md](vibe-coding-agentic-engineering.md)).
+
+At Feb 2025, Lovable had 30k paying customers; by July 2025, 180k paying subscribers and 2.3M active users across 10M projects.
 
 Limits:
 - Generated applications often skip auth/security production rigor
