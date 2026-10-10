@@ -47,6 +47,12 @@ Sector-specific cross-sections that re-apply Layers 1-3 to one industry. Not the
 
 → [docs/healthcare-bio-ai-framework.md](docs/healthcare-bio-ai-framework.md)
 
+### Research Extension — Organizational adaptability
+
+How AI usage, organizational structure, and technical infrastructure change together as AI capabilities evolve. Includes a research plan and eleven draft memos on model transitions, workflow and role redesign, learning, infrastructure, system dynamics, and measurement.
+
+→ [research/adaptability-framework/](research/adaptability-framework/) · [Research plan](research/adaptability-framework/plan.md)
+
 ## Project Structure
 
 ```
@@ -69,7 +75,10 @@ ai4-product/
 │   ├── sales-skills/          # AI for selling + investing (Layer 2)
 │   ├── productization-skills/ # AI for product implementation (Layer 2)
 │   ├── ai-systems/            # AI Systems Design & Management — SDM meta-frame (Layer 3)
-│   └── healthcare-bio-ai/     # Healthcare/Bio AI sector vertical (special topic)
+│   ├── healthcare-bio-ai/     # Healthcare/Bio AI sector vertical (special topic)
+│   └── adaptability-framework/  # Organizational adaptability research extension
+│       ├── plan.md           # Research questions and eleven prompts
+│       └── memos/            # AI usage, organization, infrastructure, and integration
 ├── product/                   # AI Work Advisor — single-file tool
 │   └── index.html             # Open in any browser, no install needed
 ├── prototypes/                # Research prototypes
@@ -88,7 +97,7 @@ ai4-product/
 
 ## Scope
 
-- **Time range:** 2022–2026 (last updated: 2026-04-21)
+- **Time range:** 2022–2026 (latest research snapshot: 2026-04-22)
 - **Sources:** Academic papers, practitioner research, and industry reports
 - **Disciplines:** HCI, software engineering, management science, machine learning, **systems engineering (MIT SDM methods)**
 

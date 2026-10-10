@@ -53,3 +53,7 @@
 8. Governance architecture under EU AI Act August 2026 enforcement
 
 Each is suitable as an SDM master's thesis scope.
+
+## Related extension
+
+[Organizational adaptability](../adaptability-framework/README.md) extends this meta-frame to repeated AI-driven change across AI usage, organizational structure, and technical infrastructure. It contains a research plan and eleven draft memos. Source audit and final synthesis remain pending.
